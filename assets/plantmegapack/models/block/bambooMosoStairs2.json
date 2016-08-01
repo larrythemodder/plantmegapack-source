@@ -1,0 +1,7 @@
+{
+"parent":"block/inner_stairs",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooMosoBlock1",
+"top":"plantmegapack:blocks/bambooMosoBlock1",
+"side":"plantmegapack:blocks/bambooMosoBlock"}
+}

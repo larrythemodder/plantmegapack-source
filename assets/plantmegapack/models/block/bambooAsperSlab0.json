@@ -1,0 +1,7 @@
+{
+"parent":"block/half_slab",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooAsperBlock1",
+"top":"plantmegapack:blocks/bambooAsperBlock1",
+"side":"plantmegapack:blocks/bambooAsperSlab"}
+}

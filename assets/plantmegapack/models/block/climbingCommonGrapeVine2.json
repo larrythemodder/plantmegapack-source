@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_cgra2",
+"textures":{
+"plant":"plantmegapack:blocks/climbingCommonGrapeVine2"
+}
+}

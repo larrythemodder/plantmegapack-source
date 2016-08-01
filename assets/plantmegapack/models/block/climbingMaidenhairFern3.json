@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_cmai3",
+"textures":{
+"plant":"plantmegapack:blocks/climbingMaidenhairFern3"
+}
+}

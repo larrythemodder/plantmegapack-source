@@ -1,0 +1,5 @@
+{
+"parent":"block/fence_side",
+"textures":{
+"texture":"plantmegapack:blocks/bambooFargesiaRobustaBlock"}
+}

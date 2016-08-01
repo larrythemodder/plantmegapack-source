@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_dbsl",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooFargesiaRobustaBlock1",
+"top":"plantmegapack:blocks/bambooFargesiaRobustaBlock1",
+"side":"plantmegapack:blocks/bambooFargesiaRobustaSlab"}
+}

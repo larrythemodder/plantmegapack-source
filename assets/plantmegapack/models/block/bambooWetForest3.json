@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_bamb",
+"textures":{
+"plant":"plantmegapack:blocks/bambooWetForest3"
+}
+}

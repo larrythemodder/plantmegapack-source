@@ -1,0 +1,7 @@
+{
+"parent":"block/half_slab",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooGoldenBlock1",
+"top":"plantmegapack:blocks/bambooGoldenBlock1",
+"side":"plantmegapack:blocks/bambooGoldenSlab"}
+}

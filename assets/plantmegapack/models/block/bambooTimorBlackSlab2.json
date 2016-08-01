@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_dbsl",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooTimorBlackBlock1",
+"top":"plantmegapack:blocks/bambooTimorBlackBlock1",
+"side":"plantmegapack:blocks/bambooTimorBlackSlab"}
+}

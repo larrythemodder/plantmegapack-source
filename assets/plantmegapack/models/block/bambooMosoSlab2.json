@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_dbsl",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooMosoBlock1",
+"top":"plantmegapack:blocks/bambooMosoBlock1",
+"side":"plantmegapack:blocks/bambooMosoSlab"}
+}

@@ -1,0 +1,6 @@
+{
+"parent":"block/cube_column",
+"textures":{
+"end":"plantmegapack:blocks/bambooWetForestBlock1",
+"side":"plantmegapack:blocks/bambooWetForestBlock"}
+}

@@ -1,0 +1,6 @@
+{
+"parent":"block/column_side",
+"textures":{
+"end":"plantmegapack:blocks/bambooGiantTimberBlock1",
+"side":"plantmegapack:blocks/bambooGiantTimberBlock"}
+}

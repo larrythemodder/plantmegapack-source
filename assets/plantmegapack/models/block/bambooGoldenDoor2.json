@@ -1,0 +1,6 @@
+{
+"parent":"block/door_top",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooGoldenDoor1",
+"top":"plantmegapack:blocks/bambooGoldenDoor2"}
+}

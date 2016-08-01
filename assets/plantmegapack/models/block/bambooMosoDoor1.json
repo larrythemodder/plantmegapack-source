@@ -1,0 +1,6 @@
+{
+"parent":"block/door_bottom_rh",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooMosoDoor1",
+"top":"plantmegapack:blocks/bambooMosoDoor2"}
+}

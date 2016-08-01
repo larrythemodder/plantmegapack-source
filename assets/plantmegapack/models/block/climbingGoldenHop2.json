@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_chop2",
+"textures":{
+"plant":"plantmegapack:blocks/climbingGoldenHop2"
+}
+}

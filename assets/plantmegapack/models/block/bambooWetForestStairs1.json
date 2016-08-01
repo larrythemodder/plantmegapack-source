@@ -1,0 +1,7 @@
+{
+"parent":"block/outer_stairs",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooWetForestBlock1",
+"top":"plantmegapack:blocks/bambooWetForestBlock1",
+"side":"plantmegapack:blocks/bambooWetForestBlock"}
+}

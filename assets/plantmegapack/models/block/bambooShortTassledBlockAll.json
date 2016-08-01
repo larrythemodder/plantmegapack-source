@@ -1,0 +1,5 @@
+{
+"parent":"block/cube_all",
+"textures":{
+"all":"plantmegapack:blocks/bambooShortTassledBlock"}
+}

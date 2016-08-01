@@ -1,0 +1,7 @@
+{
+"parent":"block/upper_slab",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooFargesiaRobustaBlock1",
+"top":"plantmegapack:blocks/bambooFargesiaRobustaBlock1",
+"side":"plantmegapack:blocks/bambooFargesiaRobustaSlab"}
+}

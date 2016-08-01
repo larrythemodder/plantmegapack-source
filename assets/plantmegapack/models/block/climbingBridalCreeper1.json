@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_cbri1",
+"textures":{
+"plant":"plantmegapack:blocks/climbingBridalCreeper1"
+}
+}
