@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeAngelsTrumpetYellow_be",
+"west":"plantmegapack:blocks/largeAngelsTrumpetYellow_bw"
+}
+}

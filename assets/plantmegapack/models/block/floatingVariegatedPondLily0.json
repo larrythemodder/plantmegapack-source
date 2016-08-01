@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_fpla",
+"textures":{
+"top":"plantmegapack:blocks/floatingVariegatedPondLily1",
+"bottom":"plantmegapack:blocks/floatingVariegatedPondLily0"
+}
+}

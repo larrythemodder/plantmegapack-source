@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco4",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooGoldenBlock1",
+"material":"plantmegapack:blocks/bambooGoldenBlock",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"plantmegapack:blocks/bambooGoldenBlock1"}
+}

@@ -1,0 +1,91 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "#plant"
+    },
+    "elements": [
+        {
+            "from": [0,0,1],
+            "to": [16,16,1],
+            "faces": {
+                "north": {
+                    "uv": [16,0,0,16],
+                    "texture": "#plant"
+                },
+                "south": {
+                    "texture": "#plant"
+                }
+            }
+        },
+        {
+            "from": [4,1,1],
+            "to": [4,2,2],
+            "faces": {
+                "west": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                },
+                "east": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                }
+            }
+        },
+        {
+            "from": [9,3,1],
+            "to": [9,4,2],
+            "faces": {
+                "west": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                },
+                "east": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                }
+            }
+        },
+        {
+            "from": [12,2,1],
+            "to": [12,3,2],
+            "faces": {
+                "west": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                },
+                "east": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                }
+            }
+        },
+        {
+            "from": [10,0,1],
+            "to": [10,1,2],
+            "faces": {
+                "west": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                },
+                "east": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                }
+            }
+        },
+        {
+            "from": [3,3,1],
+            "to": [3,4,2],
+            "faces": {
+                "west": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                },
+                "east": {
+                    "uv": [1,15,2,16],
+                    "texture": "#plant"
+                }
+            }
+        }
+    ]
+}

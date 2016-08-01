@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeDwarfSugarPalm_me",
+"west":"plantmegapack:blocks/largeDwarfSugarPalm_mw"
+}
+}

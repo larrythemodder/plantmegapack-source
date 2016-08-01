@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel2",
+"textures":{
+"material":"blocks/planks_jungle",
+"trim":"blocks/log_jungle"}
+}

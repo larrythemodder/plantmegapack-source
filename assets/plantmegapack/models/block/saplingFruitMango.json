@@ -1,0 +1,5 @@
+{
+"parent":"plantmegapack:block/_sapl",
+"textures":
+{"cross":"plantmegapack:blocks/saplingFruitMango"}
+}

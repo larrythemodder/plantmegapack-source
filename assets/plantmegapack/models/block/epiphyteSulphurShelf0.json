@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_epih",
+"textures":{
+"top":"plantmegapack:blocks/epiphyteSulphurShelf2",
+"middle":"plantmegapack:blocks/epiphyteSulphurShelf1",
+"bottom":"plantmegapack:blocks/epiphyteSulphurShelf0"
+}
+}

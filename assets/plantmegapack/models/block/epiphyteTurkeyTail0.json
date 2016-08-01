@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_epih",
+"textures":{
+"top":"plantmegapack:blocks/epiphyteTurkeyTail2",
+"middle":"plantmegapack:blocks/epiphyteTurkeyTail1",
+"bottom":"plantmegapack:blocks/epiphyteTurkeyTail0"
+}
+}

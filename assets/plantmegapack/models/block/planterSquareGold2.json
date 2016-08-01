@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plsm2",
+"textures":{
+"bottom":"blocks/gold_block",
+"material":"blocks/gold_block",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/gold_block"}
+}

@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco0",
+"textures":{
+"bottom":"blocks/log_spruce",
+"material":"blocks/log_spruce",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/planks_spruce"}
+}

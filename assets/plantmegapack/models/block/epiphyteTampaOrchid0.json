@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_epiv",
+"textures":{
+"plant":"plantmegapack:blocks/epiphyteTampaOrchid0",
+"side":"plantmegapack:blocks/epiphyteTampaOrchid1"
+}
+}

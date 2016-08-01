@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_hgpt",
+"textures":{
+"plant":"plantmegapack:blocks/hangingSilverveinCreeper0"
+}
+}

@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_imme0",
+"textures":{
+"plant":"plantmegapack:blocks/cropWildRice1",
+"immersed":"plantmegapack:blocks/cropWildRice0"
+}
+}

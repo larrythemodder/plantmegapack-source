@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_dbsl",
+"textures":{
+"bottom":"plantmegapack:blocks/woodfruitgrayBlock1",
+"top":"plantmegapack:blocks/woodfruitgrayBlock1",
+"side":"plantmegapack:blocks/woodfruitgraySlab"}
+}

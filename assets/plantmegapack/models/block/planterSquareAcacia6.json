@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plsw6",
+"textures":{
+"bottom":"blocks/planks_acacia",
+"material":"blocks/planks_acacia",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/log_acacia"}
+}

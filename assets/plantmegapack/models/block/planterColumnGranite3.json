@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco3",
+"textures":{
+"bottom":"blocks/stone_granite",
+"material":"blocks/stone_granite",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/stone_granite"}
+}

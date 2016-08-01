@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco0",
+"textures":{
+"bottom":"blocks/lapis_block",
+"material":"blocks/lapis_block",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/lapis_block"}
+}

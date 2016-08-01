@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeGardenCroton_te",
+"west":"plantmegapack:blocks/largeGardenCroton_tw"
+}
+}

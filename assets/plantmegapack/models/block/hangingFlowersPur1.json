@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_hgpm",
+"textures":{
+"plant":"plantmegapack:blocks/hangingFlowersPur1"
+}
+}

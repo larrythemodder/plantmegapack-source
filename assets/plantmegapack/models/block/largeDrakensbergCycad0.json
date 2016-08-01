@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeDrakensbergCycad_be",
+"west":"plantmegapack:blocks/largeDrakensbergCycad_bw"
+}
+}

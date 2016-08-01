@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel3",
+"textures":{
+"material":"plantmegapack:blocks/woodfruitgrayPlanks",
+"trim":"plantmegapack:blocks/woodfruitgrayBlock"}
+}

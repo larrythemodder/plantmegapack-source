@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_vine8",
+"textures":{
+"vine":"plantmegapack:blocks/vineMadeiraVine0"
+}
+}

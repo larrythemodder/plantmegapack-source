@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_fflo",
+"textures":{
+"top":"plantmegapack:blocks/floatingWaterLily_yellow",
+"bottom":"plantmegapack:blocks/floatingWaterLily"
+}
+}

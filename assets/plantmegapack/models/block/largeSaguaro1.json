@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeSaguaro_me",
+"west":"plantmegapack:blocks/largeSaguaro_mw"
+}
+}

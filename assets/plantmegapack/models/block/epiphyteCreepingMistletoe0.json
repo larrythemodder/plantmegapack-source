@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_epiv",
+"textures":{
+"plant":"plantmegapack:blocks/epiphyteCreepingMistletoe0",
+"side":"plantmegapack:blocks/epiphyteCreepingMistletoe1"
+}
+}

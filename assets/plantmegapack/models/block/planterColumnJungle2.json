@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco2",
+"textures":{
+"bottom":"blocks/log_jungle",
+"material":"blocks/log_jungle",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/planks_jungle"}
+}

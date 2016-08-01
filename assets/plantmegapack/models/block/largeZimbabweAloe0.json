@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeZimbabweAloe_be",
+"west":"plantmegapack:blocks/largeZimbabweAloe_bw"
+}
+}

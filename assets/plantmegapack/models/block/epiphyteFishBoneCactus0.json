@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_epiv",
+"textures":{
+"plant":"plantmegapack:blocks/epiphyteFishBoneCactus0",
+"side":"plantmegapack:blocks/epiphyteFishBoneCactus1"
+}
+}

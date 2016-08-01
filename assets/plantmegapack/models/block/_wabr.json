@@ -1,0 +1,77 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "#bracket"
+    },
+"display":{
+"gui":{
+"rotation":[30,225,0],
+"translation":[0,0,0],
+"scale":[0.625,0.625,0.625]
+},
+"ground":{
+"rotation":[0,0,0],
+"translation":[0,3,0],
+"scale":[0.25,0.25,0.25]
+},
+"fixed":{
+"rotation":[0,0,0],
+"translation":[0,0,0],
+"scale":[0.5,0.5,0.5]
+},
+"thirdperson_righthand":{
+"rotation": [75,45,0],
+"translation":[0,2.5,0],
+"scale":[0.375,0.375,0.375]
+},
+"firstperson_righthand":{
+"rotation":[0,45,0],
+"translation":[0,0,0],
+"scale":[0.40,0.40,0.40]
+},
+"firstperson_lefthand":{
+"rotation":[0,225,0],
+"translation":[0,0,0],
+"scale":[0.40,0.40,0.40]
+}
+},
+    "elements": [
+        {
+            "from": [4,0,0],
+            "to": [12,8,1],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 0, 0, 8, 1 ], "texture": "#bracket" },
+                "down": { "uv": [ 0, 0, 8, 1 ], "texture": "#bracket" },
+                "west": { "uv": [ 0, 0, 1, 8 ], "texture": "#bracket" },
+                "east": { "uv": [ 7, 0, 8, 8 ], "texture": "#bracket" },
+                "north": { "uv": [ 0, 0, 8, 8 ], "texture": "#bracket" },
+                "south": { "uv": [ 0, 0, 8, 8 ], "texture": "#bracket" }
+            }
+        },
+        {
+            "from": [7,3,1],
+            "to": [9,5,9],
+            "shade": false,
+            "faces": {
+                "up": { "uv": [ 9, 0, 11, 8 ], "texture": "#bracket" },
+                "down": { "uv": [ 11, 8, 9, 0 ], "texture": "#bracket" },
+                "west": { "uv": [ 8, 8, 16, 10 ], "texture": "#bracket" },
+                "east": { "uv": [ 16, 8, 8, 10 ], "texture": "#bracket" },
+                "south": { "uv": [ 9, 8, 11, 10 ], "texture": "#bracket" }
+            }
+        },
+        {
+            "from": [7,0,7],
+            "to": [9,3,9],
+            "shade": false,
+            "faces": {
+                "down": { "uv": [ 0, 14, 2, 16 ], "texture": "#bracket" },
+                "west": { "uv": [ 0, 10, 2, 13 ], "texture": "#bracket" },
+                "east": { "uv": [ 2, 10, 0, 13 ], "texture": "#bracket" },
+                "north": { "uv": [ 0, 10, 2, 13 ], "texture": "#bracket" },
+                "south": { "uv": [ 2, 10, 0, 13 ], "texture": "#bracket" }
+            }
+        }
+    ]
+}

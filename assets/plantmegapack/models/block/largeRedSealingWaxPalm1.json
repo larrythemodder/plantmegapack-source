@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_trpl",
+"textures":{
+"east":"plantmegapack:blocks/largeRedSealingWaxPalm_me",
+"west":"plantmegapack:blocks/largeRedSealingWaxPalm_mw"
+}
+}

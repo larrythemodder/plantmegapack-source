@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_ffla",
+"textures":{
+"plant":"plantmegapack:blocks/floatingWaterChestnut4"
+}
+}

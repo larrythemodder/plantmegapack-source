@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel1",
+"textures":{
+"material":"blocks/planks_birch",
+"trim":"blocks/log_birch"}
+}

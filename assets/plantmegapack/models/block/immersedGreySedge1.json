@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_imme1",
+"textures":{
+"plant":"plantmegapack:blocks/immersedGreySedge2"
+}
+}

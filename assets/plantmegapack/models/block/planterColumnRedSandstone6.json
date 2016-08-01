@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco6",
+"textures":{
+"bottom":"blocks/red_sandstone_normal",
+"material":"blocks/red_sandstone_normal",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/red_sandstone_normal"}
+}

@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plsw5",
+"textures":{
+"bottom":"blocks/planks_oak",
+"material":"blocks/planks_oak",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/log_oak"}
+}

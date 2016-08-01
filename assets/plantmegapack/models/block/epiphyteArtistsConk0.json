@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_epih",
+"textures":{
+"top":"plantmegapack:blocks/epiphyteArtistsConk2",
+"middle":"plantmegapack:blocks/epiphyteArtistsConk1",
+"bottom":"plantmegapack:blocks/epiphyteArtistsConk0"
+}
+}

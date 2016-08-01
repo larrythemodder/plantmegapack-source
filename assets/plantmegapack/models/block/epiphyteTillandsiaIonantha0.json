@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_epiv",
+"textures":{
+"plant":"plantmegapack:blocks/epiphyteTillandsiaIonantha0",
+"side":"plantmegapack:blocks/epiphyteTillandsiaIonantha1"
+}
+}

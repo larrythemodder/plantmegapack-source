@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plsw5",
+"textures":{
+"bottom":"plantmegapack:blocks/bambooTropicalBlueBlock1",
+"material":"plantmegapack:blocks/bambooTropicalBlueBlock",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"plantmegapack:blocks/bambooTropicalBlueBlock1"}
+}

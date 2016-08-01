@@ -1,0 +1,15 @@
+{
+"parent":"plantmegapack:block/_plco6",
+"display": {
+        "fixed": {
+            "rotation": [ 0, 90, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 0.5 ]
+        }
+    },
+"textures":{
+"bottom":"blocks/hardened_clay_stained_pink",
+"material":"blocks/hardened_clay_stained_pink",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/hardened_clay_stained_pink"}
+}

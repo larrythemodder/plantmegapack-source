@@ -1,0 +1,8 @@
+{
+"parent":"plantmegapack:block/_plco3",
+"textures":{
+"bottom":"blocks/hardened_clay_stained_blue",
+"material":"blocks/hardened_clay_stained_blue",
+"soil":"plantmegapack:blocks/planterSoil",
+"trim":"blocks/hardened_clay_stained_blue"}
+}

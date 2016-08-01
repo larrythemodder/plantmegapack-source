@@ -1,0 +1,5 @@
+{
+"parent":"plantmegapack:block/_wabr",
+"textures":{
+"bracket":"plantmegapack:blocks/wallBracketPrismarine1"}
+}

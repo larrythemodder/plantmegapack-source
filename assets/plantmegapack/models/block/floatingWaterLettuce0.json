@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_fpla",
+"textures":{
+"top":"plantmegapack:blocks/floatingWaterLettuce1",
+"bottom":"plantmegapack:blocks/floatingWaterLettuce0"
+}
+}

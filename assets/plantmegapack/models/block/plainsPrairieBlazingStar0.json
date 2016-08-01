@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_norm",
+"textures":{
+"plant":"plantmegapack:blocks/plainsPrairieBlazingStar0"
+}
+}

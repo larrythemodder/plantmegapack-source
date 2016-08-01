@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_crop",
+"textures":{
+"plant":"plantmegapack:blocks/cropCelery2"
+}
+}

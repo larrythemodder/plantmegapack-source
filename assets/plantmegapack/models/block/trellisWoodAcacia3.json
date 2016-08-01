@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel3",
+"textures":{
+"material":"blocks/planks_acacia",
+"trim":"blocks/log_acacia"}
+}

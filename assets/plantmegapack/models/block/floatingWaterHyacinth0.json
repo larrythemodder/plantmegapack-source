@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_fpla",
+"textures":{
+"top":"plantmegapack:blocks/floatingWaterHyacinth1",
+"bottom":"plantmegapack:blocks/floatingWaterHyacinth0"
+}
+}

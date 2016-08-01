@@ -1,0 +1,5 @@
+{
+"parent":"plantmegapack:block/_tfov3",
+"textures":{
+"fruit":"plantmegapack:blocks/treeFruitAvocado"}
+}

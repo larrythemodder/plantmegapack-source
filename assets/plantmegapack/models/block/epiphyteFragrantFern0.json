@@ -1,0 +1,7 @@
+{
+"parent":"plantmegapack:block/_epiv",
+"textures":{
+"plant":"plantmegapack:blocks/epiphyteFragrantFern0",
+"side":"plantmegapack:blocks/epiphyteFragrantFern1"
+}
+}

@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_flat",
+"textures":{
+"plant":"plantmegapack:blocks/fernDwarfPalmetto0"
+}
+}

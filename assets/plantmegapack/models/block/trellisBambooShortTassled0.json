@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel0",
+"textures":{
+"material":"plantmegapack:blocks/bambooShortTassledBlock",
+"trim":"plantmegapack:blocks/bambooShortTassledBlock1"}
+}

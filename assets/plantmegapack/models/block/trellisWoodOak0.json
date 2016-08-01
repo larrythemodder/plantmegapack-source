@@ -1,0 +1,6 @@
+{
+"parent":"plantmegapack:block/_trel0",
+"textures":{
+"material":"blocks/planks_oak",
+"trim":"blocks/log_oak"}
+}
