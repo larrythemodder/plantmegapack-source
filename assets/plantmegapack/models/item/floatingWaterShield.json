@@ -1,0 +1,7 @@
+{
+"parent":"item/generated",
+"textures":{
+"layer0":"plantmegapack:blocks/floatingWaterShield0",
+"layer1":"plantmegapack:blocks/floatingWaterShield1"
+}
+}

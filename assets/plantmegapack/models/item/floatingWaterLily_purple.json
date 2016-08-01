@@ -1,0 +1,7 @@
+{
+"parent":"item/generated",
+"textures":{
+"layer0":"plantmegapack:blocks/floatingWaterLily",
+"layer1":"plantmegapack:blocks/floatingWaterLily_purple"
+}
+}
