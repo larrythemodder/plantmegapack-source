@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerBegonia_red"},
+"variant=orange":{"model":"plantmegapack:flowerBegonia_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerBegonia_yellow"},
+"variant=green":{"model":"plantmegapack:flowerBegonia_green"},
+"variant=cyan":{"model":"plantmegapack:flowerBegonia_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerBegonia_blue"},
+"variant=purple":{"model":"plantmegapack:flowerBegonia_purple"},
+"variant=pink":{"model":"plantmegapack:flowerBegonia_pink"},
+"variant=white":{"model":"plantmegapack:flowerBegonia_white"}
+}
+}

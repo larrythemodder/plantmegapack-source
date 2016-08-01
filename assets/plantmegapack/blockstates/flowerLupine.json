@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerLupine_red"},
+"variant=orange":{"model":"plantmegapack:flowerLupine_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerLupine_yellow"},
+"variant=green":{"model":"plantmegapack:flowerLupine_green"},
+"variant=cyan":{"model":"plantmegapack:flowerLupine_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerLupine_blue"},
+"variant=purple":{"model":"plantmegapack:flowerLupine_purple"},
+"variant=pink":{"model":"plantmegapack:flowerLupine_pink"},
+"variant=white":{"model":"plantmegapack:flowerLupine_white"}
+}
+}

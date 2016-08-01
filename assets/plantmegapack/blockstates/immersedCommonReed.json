@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:immersedCommonReed0"},
+"half=upper":{"model":"plantmegapack:immersedCommonReed1"}
+}
+}

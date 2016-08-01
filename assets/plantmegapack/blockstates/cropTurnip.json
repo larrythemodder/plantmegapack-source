@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropTurnip0"},
+"age=1":{"model":"plantmegapack:cropTurnip1"},
+"age=2":{"model":"plantmegapack:cropTurnip1"},
+"age=3":{"model":"plantmegapack:cropTurnip2"},
+"age=4":{"model":"plantmegapack:cropTurnip2"},
+"age=5":{"model":"plantmegapack:cropTurnip3"},
+"age=6":{"model":"plantmegapack:cropTurnip3"},
+"age=7":{"model":"plantmegapack:cropTurnip4"}
+}
+}

@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:jungleHeliconiaAcuminata0"},
+"half=upper":{"model":"plantmegapack:jungleHeliconiaAcuminata1"}
+}
+}

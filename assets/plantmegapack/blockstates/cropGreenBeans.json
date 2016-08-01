@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropGreenBeans0"},
+"age=1":{"model":"plantmegapack:cropGreenBeans1"},
+"age=2":{"model":"plantmegapack:cropGreenBeans1"},
+"age=3":{"model":"plantmegapack:cropGreenBeans2"},
+"age=4":{"model":"plantmegapack:cropGreenBeans2"},
+"age=5":{"model":"plantmegapack:cropGreenBeans3"},
+"age=6":{"model":"plantmegapack:cropGreenBeans3"},
+"age=7":{"model":"plantmegapack:cropGreenBeans4"}
+}
+}

@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropBroccoli0"},
+"age=1":{"model":"plantmegapack:cropBroccoli1"},
+"age=2":{"model":"plantmegapack:cropBroccoli1"},
+"age=3":{"model":"plantmegapack:cropBroccoli2"},
+"age=4":{"model":"plantmegapack:cropBroccoli2"},
+"age=5":{"model":"plantmegapack:cropBroccoli3"},
+"age=6":{"model":"plantmegapack:cropBroccoli3"},
+"age=7":{"model":"plantmegapack:cropBroccoli4"}
+}
+}

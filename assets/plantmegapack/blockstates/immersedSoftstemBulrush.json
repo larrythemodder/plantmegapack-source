@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:immersedSoftstemBulrush0"},
+"half=upper":{"model":"plantmegapack:immersedSoftstemBulrush1"}
+}
+}

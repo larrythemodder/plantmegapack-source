@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:woodfruitgraySlab0"},
+"half=bottom,variant=true":{"model":"plantmegapack:woodfruitgraySlab0"},
+"half=top,variant=false":{"model":"plantmegapack:woodfruitgraySlab1"},
+"half=top,variant=true":{"model":"plantmegapack:woodfruitgraySlab1"}
+}
+}

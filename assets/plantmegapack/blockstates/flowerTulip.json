@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerTulip_red"},
+"variant=orange":{"model":"plantmegapack:flowerTulip_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerTulip_yellow"},
+"variant=green":{"model":"plantmegapack:flowerTulip_green"},
+"variant=cyan":{"model":"plantmegapack:flowerTulip_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerTulip_blue"},
+"variant=purple":{"model":"plantmegapack:flowerTulip_purple"},
+"variant=pink":{"model":"plantmegapack:flowerTulip_pink"},
+"variant=white":{"model":"plantmegapack:flowerTulip_white"}
+}
+}

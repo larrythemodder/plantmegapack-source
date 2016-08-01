@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketQuartz"},
+"facing=east":{"model":"plantmegapack:wallBracketQuartz","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketQuartz","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketQuartz","y":270}
+}
+}

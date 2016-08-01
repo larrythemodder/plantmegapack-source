@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:fernOstrich0"},
+"half=upper":{"model":"plantmegapack:fernOstrich1"}
+}
+}

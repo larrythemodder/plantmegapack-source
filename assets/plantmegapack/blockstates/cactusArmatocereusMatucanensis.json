@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:cactusArmatocereusMatucanensis0"},
+"half=upper":{"model":"plantmegapack:cactusArmatocereusMatucanensis1"}
+}
+}

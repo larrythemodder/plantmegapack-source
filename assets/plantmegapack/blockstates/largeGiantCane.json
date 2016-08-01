@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeGiantCane0"},
+"segment=middle":{"model":"plantmegapack:largeGiantCane1"},
+"segment=upper":{"model":"plantmegapack:largeGiantCane2"}
+}
+}

@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeBigLeafPalm0"},
+"segment=middle":{"model":"plantmegapack:largeBigLeafPalm1"},
+"segment=upper":{"model":"plantmegapack:largeBigLeafPalm2"}
+}
+}

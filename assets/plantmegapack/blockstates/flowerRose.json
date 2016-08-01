@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerRose_red"},
+"variant=orange":{"model":"plantmegapack:flowerRose_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerRose_yellow"},
+"variant=green":{"model":"plantmegapack:flowerRose_green"},
+"variant=cyan":{"model":"plantmegapack:flowerRose_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerRose_blue"},
+"variant=purple":{"model":"plantmegapack:flowerRose_purple"},
+"variant=pink":{"model":"plantmegapack:flowerRose_pink"},
+"variant=white":{"model":"plantmegapack:flowerRose_white"}
+}
+}

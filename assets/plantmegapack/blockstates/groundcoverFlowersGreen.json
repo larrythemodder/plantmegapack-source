@@ -1,0 +1,10 @@
+{
+"variants":{
+"normal":[
+{"model":"plantmegapack:groundcoverFlowersGreen0"},
+{"model":"plantmegapack:groundcoverFlowersGreen0","y":90},
+{"model":"plantmegapack:groundcoverFlowersGreen0","y":180},
+{"model":"plantmegapack:groundcoverFlowersGreen0","y":270}
+]
+}
+}

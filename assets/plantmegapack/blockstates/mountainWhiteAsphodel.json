@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:mountainWhiteAsphodel0"},
+"half=upper":{"model":"plantmegapack:mountainWhiteAsphodel1"}
+}
+}

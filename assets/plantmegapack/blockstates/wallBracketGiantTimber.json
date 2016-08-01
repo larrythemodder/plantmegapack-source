@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketGiantTimber"},
+"facing=east":{"model":"plantmegapack:wallBracketGiantTimber","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketGiantTimber","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketGiantTimber","y":270}
+}
+}

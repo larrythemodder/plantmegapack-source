@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=south":{"model":"plantmegapack:epiphyteCuthbertsDendrobium0","y":180},
+"facing=west":{"model":"plantmegapack:epiphyteCuthbertsDendrobium0","y":270},
+"facing=north":{"model":"plantmegapack:epiphyteCuthbertsDendrobium0"},
+"facing=east":{"model":"plantmegapack:epiphyteCuthbertsDendrobium0","y":90}
+}
+}

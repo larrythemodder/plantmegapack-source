@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeGardenCroton0"},
+"segment=middle":{"model":"plantmegapack:largeGardenCroton1"},
+"segment=upper":{"model":"plantmegapack:largeGardenCroton2"}
+}
+}

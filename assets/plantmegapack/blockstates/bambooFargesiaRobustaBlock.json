@@ -1,0 +1,8 @@
+{
+"variants":{
+"axis=y":{"model":"plantmegapack:bambooFargesiaRobustaBlock"},
+"axis=z":{"model":"plantmegapack:bambooFargesiaRobustaBlockSide"},
+"axis=x":{"model":"plantmegapack:bambooFargesiaRobustaBlockSide", "y":90},
+"axis=none":{"model":"plantmegapack:bambooFargesiaRobustaBlockAll"}
+}
+}

@@ -1,0 +1,9 @@
+{
+"variants":{
+"segment=0":{"model":"plantmegapack:bambooShortTassled0"},
+"segment=1":{"model":"plantmegapack:bambooShortTassled1"},
+"segment=2":{"model":"plantmegapack:bambooShortTassled2"},
+"segment=3":{"model":"plantmegapack:bambooShortTassled3"},
+"segment=4":{"model":"plantmegapack:bambooShortTassled4"}
+}
+}

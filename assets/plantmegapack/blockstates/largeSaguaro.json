@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeSaguaro0"},
+"segment=middle":{"model":"plantmegapack:largeSaguaro1"},
+"segment=upper":{"model":"plantmegapack:largeSaguaro2"}
+}
+}

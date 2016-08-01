@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerHawkweed_red"},
+"variant=orange":{"model":"plantmegapack:flowerHawkweed_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerHawkweed_yellow"},
+"variant=green":{"model":"plantmegapack:flowerHawkweed_green"},
+"variant=cyan":{"model":"plantmegapack:flowerHawkweed_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerHawkweed_blue"},
+"variant=purple":{"model":"plantmegapack:flowerHawkweed_purple"},
+"variant=pink":{"model":"plantmegapack:flowerHawkweed_pink"},
+"variant=white":{"model":"plantmegapack:flowerHawkweed_white"}
+}
+}

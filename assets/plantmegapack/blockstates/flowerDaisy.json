@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerDaisy_red"},
+"variant=orange":{"model":"plantmegapack:flowerDaisy_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerDaisy_yellow"},
+"variant=green":{"model":"plantmegapack:flowerDaisy_green"},
+"variant=cyan":{"model":"plantmegapack:flowerDaisy_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerDaisy_blue"},
+"variant=purple":{"model":"plantmegapack:flowerDaisy_purple"},
+"variant=pink":{"model":"plantmegapack:flowerDaisy_pink"},
+"variant=white":{"model":"plantmegapack:flowerDaisy_white"}
+}
+}

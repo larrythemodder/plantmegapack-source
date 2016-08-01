@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketMoso"},
+"facing=east":{"model":"plantmegapack:wallBracketMoso","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketMoso","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketMoso","y":270}
+}
+}

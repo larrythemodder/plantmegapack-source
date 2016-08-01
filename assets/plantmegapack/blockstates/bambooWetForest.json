@@ -1,0 +1,9 @@
+{
+"variants":{
+"segment=0":{"model":"plantmegapack:bambooWetForest0"},
+"segment=1":{"model":"plantmegapack:bambooWetForest1"},
+"segment=2":{"model":"plantmegapack:bambooWetForest2"},
+"segment=3":{"model":"plantmegapack:bambooWetForest3"},
+"segment=4":{"model":"plantmegapack:bambooWetForest4"}
+}
+}

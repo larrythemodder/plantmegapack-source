@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerAngelsTrumpet_red"},
+"variant=orange":{"model":"plantmegapack:flowerAngelsTrumpet_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerAngelsTrumpet_yellow"},
+"variant=green":{"model":"plantmegapack:flowerAngelsTrumpet_green"},
+"variant=cyan":{"model":"plantmegapack:flowerAngelsTrumpet_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerAngelsTrumpet_blue"},
+"variant=purple":{"model":"plantmegapack:flowerAngelsTrumpet_purple"},
+"variant=pink":{"model":"plantmegapack:flowerAngelsTrumpet_pink"},
+"variant=white":{"model":"plantmegapack:flowerAngelsTrumpet_white"}
+}
+}

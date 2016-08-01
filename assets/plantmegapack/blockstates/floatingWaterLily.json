@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:floatingWaterLily_red"},
+"variant=orange":{"model":"plantmegapack:floatingWaterLily_orange"},
+"variant=yellow":{"model":"plantmegapack:floatingWaterLily_yellow"},
+"variant=green":{"model":"plantmegapack:floatingWaterLily_green"},
+"variant=cyan":{"model":"plantmegapack:floatingWaterLily_cyan"},
+"variant=blue":{"model":"plantmegapack:floatingWaterLily_blue"},
+"variant=purple":{"model":"plantmegapack:floatingWaterLily_purple"},
+"variant=pink":{"model":"plantmegapack:floatingWaterLily_pink"},
+"variant=white":{"model":"plantmegapack:floatingWaterLily_white"}
+}
+}

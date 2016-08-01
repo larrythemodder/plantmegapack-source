@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerAzalea_red"},
+"variant=orange":{"model":"plantmegapack:flowerAzalea_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerAzalea_yellow"},
+"variant=green":{"model":"plantmegapack:flowerAzalea_green"},
+"variant=cyan":{"model":"plantmegapack:flowerAzalea_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerAzalea_blue"},
+"variant=purple":{"model":"plantmegapack:flowerAzalea_purple"},
+"variant=pink":{"model":"plantmegapack:flowerAzalea_pink"},
+"variant=white":{"model":"plantmegapack:flowerAzalea_white"}
+}
+}

@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingFruitAppleYellow"},
+"stage=0":{"model":"plantmegapack:saplingFruitAppleYellow"},
+"stage=1":{"model":"plantmegapack:saplingFruitAppleYellow"}
+}
+}

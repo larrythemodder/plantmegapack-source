@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerHydrangea_red"},
+"variant=orange":{"model":"plantmegapack:flowerHydrangea_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerHydrangea_yellow"},
+"variant=green":{"model":"plantmegapack:flowerHydrangea_green"},
+"variant=cyan":{"model":"plantmegapack:flowerHydrangea_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerHydrangea_blue"},
+"variant=purple":{"model":"plantmegapack:flowerHydrangea_purple"},
+"variant=pink":{"model":"plantmegapack:flowerHydrangea_pink"},
+"variant=white":{"model":"plantmegapack:flowerHydrangea_white"}
+}
+}

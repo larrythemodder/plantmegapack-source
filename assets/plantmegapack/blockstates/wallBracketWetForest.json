@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketWetForest"},
+"facing=east":{"model":"plantmegapack:wallBracketWetForest","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketWetForest","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketWetForest","y":270}
+}
+}

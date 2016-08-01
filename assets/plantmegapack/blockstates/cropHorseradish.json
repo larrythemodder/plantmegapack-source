@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropHorseradish0"},
+"age=1":{"model":"plantmegapack:cropHorseradish1"},
+"age=2":{"model":"plantmegapack:cropHorseradish1"},
+"age=3":{"model":"plantmegapack:cropHorseradish2"},
+"age=4":{"model":"plantmegapack:cropHorseradish2"},
+"age=5":{"model":"plantmegapack:cropHorseradish3"},
+"age=6":{"model":"plantmegapack:cropHorseradish3"},
+"age=7":{"model":"plantmegapack:cropHorseradish4"}
+}
+}

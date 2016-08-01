@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerGeranium_red"},
+"variant=orange":{"model":"plantmegapack:flowerGeranium_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerGeranium_yellow"},
+"variant=green":{"model":"plantmegapack:flowerGeranium_green"},
+"variant=cyan":{"model":"plantmegapack:flowerGeranium_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerGeranium_blue"},
+"variant=purple":{"model":"plantmegapack:flowerGeranium_purple"},
+"variant=pink":{"model":"plantmegapack:flowerGeranium_pink"},
+"variant=white":{"model":"plantmegapack:flowerGeranium_white"}
+}
+}

@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingOakEnglish"},
+"stage=0":{"model":"plantmegapack:saplingOakEnglish"},
+"stage=1":{"model":"plantmegapack:saplingOakEnglish"}
+}
+}

@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:plainsCanadianGoldenrod0"},
+"half=upper":{"model":"plantmegapack:plainsCanadianGoldenrod1"}
+}
+}

@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropSorrel0"},
+"age=1":{"model":"plantmegapack:cropSorrel1"},
+"age=2":{"model":"plantmegapack:cropSorrel1"},
+"age=3":{"model":"plantmegapack:cropSorrel2"},
+"age=4":{"model":"plantmegapack:cropSorrel2"},
+"age=5":{"model":"plantmegapack:cropSorrel3"},
+"age=6":{"model":"plantmegapack:cropSorrel3"},
+"age=7":{"model":"plantmegapack:cropSorrel4"}
+}
+}

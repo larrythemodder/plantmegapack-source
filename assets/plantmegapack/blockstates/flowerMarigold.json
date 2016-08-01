@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerMarigold_red"},
+"variant=orange":{"model":"plantmegapack:flowerMarigold_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerMarigold_yellow"},
+"variant=green":{"model":"plantmegapack:flowerMarigold_green"},
+"variant=cyan":{"model":"plantmegapack:flowerMarigold_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerMarigold_blue"},
+"variant=purple":{"model":"plantmegapack:flowerMarigold_purple"},
+"variant=pink":{"model":"plantmegapack:flowerMarigold_pink"},
+"variant=white":{"model":"plantmegapack:flowerMarigold_white"}
+}
+}

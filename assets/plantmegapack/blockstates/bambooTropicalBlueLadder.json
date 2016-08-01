@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:bambooTropicalBlueLadder"},
+"facing=east":{"model":"plantmegapack:bambooTropicalBlueLadder","y":90},
+"facing=south":{"model":"plantmegapack:bambooTropicalBlueLadder","y":180},
+"facing=west":{"model":"plantmegapack:bambooTropicalBlueLadder","y":270}
+}
+}

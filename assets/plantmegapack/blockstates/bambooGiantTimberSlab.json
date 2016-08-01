@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:bambooGiantTimberSlab0"},
+"half=bottom,variant=true":{"model":"plantmegapack:bambooGiantTimberSlab0"},
+"half=top,variant=false":{"model":"plantmegapack:bambooGiantTimberSlab1"},
+"half=top,variant=true":{"model":"plantmegapack:bambooGiantTimberSlab1"}
+}
+}

@@ -1,0 +1,8 @@
+{
+"variants":{
+"axis=y":{"model":"plantmegapack:bambooMosoBlock"},
+"axis=z":{"model":"plantmegapack:bambooMosoBlockSide"},
+"axis=x":{"model":"plantmegapack:bambooMosoBlockSide", "y":90},
+"axis=none":{"model":"plantmegapack:bambooMosoBlockAll"}
+}
+}

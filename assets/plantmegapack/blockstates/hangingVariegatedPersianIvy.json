@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingVariegatedPersianIvy0"},
+"segment=middle":{"model":"plantmegapack:hangingVariegatedPersianIvy1"},
+"segment=bottom":{"model":"plantmegapack:hangingVariegatedPersianIvy2"}
+}
+}

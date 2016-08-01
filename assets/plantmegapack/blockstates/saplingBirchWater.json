@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingBirchWater"},
+"stage=0":{"model":"plantmegapack:saplingBirchWater"},
+"stage=1":{"model":"plantmegapack:saplingBirchWater"}
+}
+}

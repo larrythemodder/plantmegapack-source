@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:bambooShortTassledSlab2"},
+"half=bottom,variant=true":{"model":"plantmegapack:bambooShortTassledSlab2"},
+"half=top,variant=false":{"model":"plantmegapack:bambooShortTassledSlab2"},
+"half=top,variant=true":{"model":"plantmegapack:bambooShortTassledSlab2"}
+}
+}

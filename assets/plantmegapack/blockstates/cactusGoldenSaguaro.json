@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:cactusGoldenSaguaro0"},
+"half=upper":{"model":"plantmegapack:cactusGoldenSaguaro1"}
+}
+}

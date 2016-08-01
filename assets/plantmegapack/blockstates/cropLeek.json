@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropLeek0"},
+"age=1":{"model":"plantmegapack:cropLeek1"},
+"age=2":{"model":"plantmegapack:cropLeek1"},
+"age=3":{"model":"plantmegapack:cropLeek2"},
+"age=4":{"model":"plantmegapack:cropLeek2"},
+"age=5":{"model":"plantmegapack:cropLeek3"},
+"age=6":{"model":"plantmegapack:cropLeek3"},
+"age=7":{"model":"plantmegapack:cropLeek4"}
+}
+}

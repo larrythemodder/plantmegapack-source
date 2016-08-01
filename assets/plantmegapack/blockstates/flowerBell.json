@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerBell_red"},
+"variant=orange":{"model":"plantmegapack:flowerBell_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerBell_yellow"},
+"variant=green":{"model":"plantmegapack:flowerBell_green"},
+"variant=cyan":{"model":"plantmegapack:flowerBell_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerBell_blue"},
+"variant=purple":{"model":"plantmegapack:flowerBell_purple"},
+"variant=pink":{"model":"plantmegapack:flowerBell_pink"},
+"variant=white":{"model":"plantmegapack:flowerBell_white"}
+}
+}

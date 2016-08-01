@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:beachSeaOats0"},
+"half=upper":{"model":"plantmegapack:beachSeaOats1"}
+}
+}

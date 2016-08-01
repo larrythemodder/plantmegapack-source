@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:grassCord0"},
+"half=upper":{"model":"plantmegapack:grassCord1"}
+}
+}

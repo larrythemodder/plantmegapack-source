@@ -1,0 +1,10 @@
+{
+"variants":{
+"normal":[
+{"model":"plantmegapack:floatingVariegatedPondLily0"},
+{"model":"plantmegapack:floatingVariegatedPondLily0","y":90},
+{"model":"plantmegapack:floatingVariegatedPondLily0","y":180},
+{"model":"plantmegapack:floatingVariegatedPondLily0","y":270}
+]
+}
+}

@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeZimbabweAloe0"},
+"segment=middle":{"model":"plantmegapack:largeZimbabweAloe1"},
+"segment=upper":{"model":"plantmegapack:largeZimbabweAloe2"}
+}
+}

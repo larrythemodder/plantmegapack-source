@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:floatingWaterChestnut0"},
+"age=1":{"model":"plantmegapack:floatingWaterChestnut1"},
+"age=2":{"model":"plantmegapack:floatingWaterChestnut1"},
+"age=3":{"model":"plantmegapack:floatingWaterChestnut2"},
+"age=4":{"model":"plantmegapack:floatingWaterChestnut2"},
+"age=5":{"model":"plantmegapack:floatingWaterChestnut3"},
+"age=6":{"model":"plantmegapack:floatingWaterChestnut3"},
+"age=7":{"model":"plantmegapack:floatingWaterChestnut4"}
+}
+}

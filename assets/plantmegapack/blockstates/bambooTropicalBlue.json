@@ -1,0 +1,9 @@
+{
+"variants":{
+"segment=0":{"model":"plantmegapack:bambooTropicalBlue0"},
+"segment=1":{"model":"plantmegapack:bambooTropicalBlue1"},
+"segment=2":{"model":"plantmegapack:bambooTropicalBlue2"},
+"segment=3":{"model":"plantmegapack:bambooTropicalBlue3"},
+"segment=4":{"model":"plantmegapack:bambooTropicalBlue4"}
+}
+}

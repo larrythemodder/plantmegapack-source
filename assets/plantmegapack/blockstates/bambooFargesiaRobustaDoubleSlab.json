@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:bambooFargesiaRobustaSlab2"},
+"half=bottom,variant=true":{"model":"plantmegapack:bambooFargesiaRobustaSlab2"},
+"half=top,variant=false":{"model":"plantmegapack:bambooFargesiaRobustaSlab2"},
+"half=top,variant=true":{"model":"plantmegapack:bambooFargesiaRobustaSlab2"}
+}
+}

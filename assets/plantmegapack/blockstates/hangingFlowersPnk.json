@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingFlowersPnk0"},
+"segment=middle":{"model":"plantmegapack:hangingFlowersPnk1"},
+"segment=bottom":{"model":"plantmegapack:hangingFlowersPnk2"}
+}
+}

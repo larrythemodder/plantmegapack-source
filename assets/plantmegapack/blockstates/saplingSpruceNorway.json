@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingSpruceNorway"},
+"stage=0":{"model":"plantmegapack:saplingSpruceNorway"},
+"stage=1":{"model":"plantmegapack:saplingSpruceNorway"}
+}
+}

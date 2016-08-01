@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingSilverveinCreeper0"},
+"segment=middle":{"model":"plantmegapack:hangingSilverveinCreeper1"},
+"segment=bottom":{"model":"plantmegapack:hangingSilverveinCreeper2"}
+}
+}

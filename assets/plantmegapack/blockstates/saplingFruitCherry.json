@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingFruitCherry"},
+"stage=0":{"model":"plantmegapack:saplingFruitCherry"},
+"stage=1":{"model":"plantmegapack:saplingFruitCherry"}
+}
+}

@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:wetlandsCattails0"},
+"half=upper":{"model":"plantmegapack:wetlandsCattails1"}
+}
+}

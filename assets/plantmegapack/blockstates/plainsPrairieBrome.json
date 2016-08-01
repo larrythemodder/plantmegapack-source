@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:plainsPrairieBrome0"},
+"half=upper":{"model":"plantmegapack:plainsPrairieBrome1"}
+}
+}

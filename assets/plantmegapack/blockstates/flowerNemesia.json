@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerNemesia_red"},
+"variant=orange":{"model":"plantmegapack:flowerNemesia_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerNemesia_yellow"},
+"variant=green":{"model":"plantmegapack:flowerNemesia_green"},
+"variant=cyan":{"model":"plantmegapack:flowerNemesia_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerNemesia_blue"},
+"variant=purple":{"model":"plantmegapack:flowerNemesia_purple"},
+"variant=pink":{"model":"plantmegapack:flowerNemesia_pink"},
+"variant=white":{"model":"plantmegapack:flowerNemesia_white"}
+}
+}

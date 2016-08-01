@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=south":{"model":"plantmegapack:epiphyteClimbingCactus0","y":180},
+"facing=west":{"model":"plantmegapack:epiphyteClimbingCactus0","y":270},
+"facing=north":{"model":"plantmegapack:epiphyteClimbingCactus0"},
+"facing=east":{"model":"plantmegapack:epiphyteClimbingCactus0","y":90}
+}
+}

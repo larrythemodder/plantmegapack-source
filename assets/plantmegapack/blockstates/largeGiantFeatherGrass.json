@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeGiantFeatherGrass0"},
+"segment=middle":{"model":"plantmegapack:largeGiantFeatherGrass1"},
+"segment=upper":{"model":"plantmegapack:largeGiantFeatherGrass2"}
+}
+}

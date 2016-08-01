@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=south":{"model":"plantmegapack:epiphyteCreepingMistletoe0","y":180},
+"facing=west":{"model":"plantmegapack:epiphyteCreepingMistletoe0","y":270},
+"facing=north":{"model":"plantmegapack:epiphyteCreepingMistletoe0"},
+"facing=east":{"model":"plantmegapack:epiphyteCreepingMistletoe0","y":90}
+}
+}

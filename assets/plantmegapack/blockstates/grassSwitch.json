@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:grassSwitch0"},
+"half=upper":{"model":"plantmegapack:grassSwitch1"}
+}
+}

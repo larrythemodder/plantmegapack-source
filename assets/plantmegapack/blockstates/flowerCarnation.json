@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerCarnation_red"},
+"variant=orange":{"model":"plantmegapack:flowerCarnation_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerCarnation_yellow"},
+"variant=green":{"model":"plantmegapack:flowerCarnation_green"},
+"variant=cyan":{"model":"plantmegapack:flowerCarnation_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerCarnation_blue"},
+"variant=purple":{"model":"plantmegapack:flowerCarnation_purple"},
+"variant=pink":{"model":"plantmegapack:flowerCarnation_pink"},
+"variant=white":{"model":"plantmegapack:flowerCarnation_white"}
+}
+}

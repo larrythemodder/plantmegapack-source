@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingBridalCreeper0"},
+"segment=middle":{"model":"plantmegapack:hangingBridalCreeper1"},
+"segment=bottom":{"model":"plantmegapack:hangingBridalCreeper2"}
+}
+}

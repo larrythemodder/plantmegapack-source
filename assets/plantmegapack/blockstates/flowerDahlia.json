@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerDahlia_red"},
+"variant=orange":{"model":"plantmegapack:flowerDahlia_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerDahlia_yellow"},
+"variant=green":{"model":"plantmegapack:flowerDahlia_green"},
+"variant=cyan":{"model":"plantmegapack:flowerDahlia_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerDahlia_blue"},
+"variant=purple":{"model":"plantmegapack:flowerDahlia_purple"},
+"variant=pink":{"model":"plantmegapack:flowerDahlia_pink"},
+"variant=white":{"model":"plantmegapack:flowerDahlia_white"}
+}
+}

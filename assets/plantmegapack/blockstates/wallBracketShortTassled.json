@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketShortTassled"},
+"facing=east":{"model":"plantmegapack:wallBracketShortTassled","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketShortTassled","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketShortTassled","y":270}
+}
+}

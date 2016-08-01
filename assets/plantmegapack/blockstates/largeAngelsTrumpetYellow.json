@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=lower":{"model":"plantmegapack:largeAngelsTrumpetYellow0"},
+"segment=middle":{"model":"plantmegapack:largeAngelsTrumpetYellow1"},
+"segment=upper":{"model":"plantmegapack:largeAngelsTrumpetYellow2"}
+}
+}

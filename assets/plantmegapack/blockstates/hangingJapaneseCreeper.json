@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingJapaneseCreeper0"},
+"segment=middle":{"model":"plantmegapack:hangingJapaneseCreeper1"},
+"segment=bottom":{"model":"plantmegapack:hangingJapaneseCreeper2"}
+}
+}

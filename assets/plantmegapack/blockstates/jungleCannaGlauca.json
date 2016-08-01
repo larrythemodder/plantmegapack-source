@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:jungleCannaGlauca0"},
+"half=upper":{"model":"plantmegapack:jungleCannaGlauca1"}
+}
+}

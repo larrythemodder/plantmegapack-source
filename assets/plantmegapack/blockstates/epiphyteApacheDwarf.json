@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=south":{"model":"plantmegapack:epiphyteApacheDwarf0","y":180},
+"facing=west":{"model":"plantmegapack:epiphyteApacheDwarf0","y":270},
+"facing=north":{"model":"plantmegapack:epiphyteApacheDwarf0"},
+"facing=east":{"model":"plantmegapack:epiphyteApacheDwarf0","y":90}
+}
+}

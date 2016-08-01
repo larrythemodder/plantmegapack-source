@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketLapis"},
+"facing=east":{"model":"plantmegapack:wallBracketLapis","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketLapis","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketLapis","y":270}
+}
+}

@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketObsidian"},
+"facing=east":{"model":"plantmegapack:wallBracketObsidian","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketObsidian","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketObsidian","y":270}
+}
+}

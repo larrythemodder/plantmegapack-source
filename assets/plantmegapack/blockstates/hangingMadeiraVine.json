@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingMadeiraVine0"},
+"segment=middle":{"model":"plantmegapack:hangingMadeiraVine1"},
+"segment=bottom":{"model":"plantmegapack:hangingMadeiraVine2"}
+}
+}

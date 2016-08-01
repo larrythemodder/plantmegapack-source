@@ -1,0 +1,7 @@
+{
+"variants":{
+"normal":{"model":"plantmegapack:saplingAcaciaBaobob"},
+"stage=0":{"model":"plantmegapack:saplingAcaciaBaobob"},
+"stage=1":{"model":"plantmegapack:saplingAcaciaBaobob"}
+}
+}

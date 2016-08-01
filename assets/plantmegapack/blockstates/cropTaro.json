@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropTaro0"},
+"age=1":{"model":"plantmegapack:cropTaro1"},
+"age=2":{"model":"plantmegapack:cropTaro1"},
+"age=3":{"model":"plantmegapack:cropTaro2"},
+"age=4":{"model":"plantmegapack:cropTaro2"},
+"age=5":{"model":"plantmegapack:cropTaro3"},
+"age=6":{"model":"plantmegapack:cropTaro3"},
+"age=7":{"model":"plantmegapack:cropTaro4"}
+}
+}

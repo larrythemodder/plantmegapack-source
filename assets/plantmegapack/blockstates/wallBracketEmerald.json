@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketEmerald"},
+"facing=east":{"model":"plantmegapack:wallBracketEmerald","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketEmerald","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketEmerald","y":270}
+}
+}

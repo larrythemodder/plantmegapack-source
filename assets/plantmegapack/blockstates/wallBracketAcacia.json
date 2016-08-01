@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketAcacia"},
+"facing=east":{"model":"plantmegapack:wallBracketAcacia","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketAcacia","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketAcacia","y":270}
+}
+}

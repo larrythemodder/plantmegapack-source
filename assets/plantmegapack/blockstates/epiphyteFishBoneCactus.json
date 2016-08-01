@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=south":{"model":"plantmegapack:epiphyteFishBoneCactus0","y":180},
+"facing=west":{"model":"plantmegapack:epiphyteFishBoneCactus0","y":270},
+"facing=north":{"model":"plantmegapack:epiphyteFishBoneCactus0"},
+"facing=east":{"model":"plantmegapack:epiphyteFishBoneCactus0","y":90}
+}
+}

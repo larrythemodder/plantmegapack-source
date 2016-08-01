@@ -1,0 +1,10 @@
+{
+"variants":{
+"normal":[
+{"model":"plantmegapack:floatingWaterShield0"},
+{"model":"plantmegapack:floatingWaterShield0","y":90},
+{"model":"plantmegapack:floatingWaterShield0","y":180},
+{"model":"plantmegapack:floatingWaterShield0","y":270}
+]
+}
+}

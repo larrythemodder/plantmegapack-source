@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:bambooTropicalBlueSlab0"},
+"half=bottom,variant=true":{"model":"plantmegapack:bambooTropicalBlueSlab0"},
+"half=top,variant=false":{"model":"plantmegapack:bambooTropicalBlueSlab1"},
+"half=top,variant=true":{"model":"plantmegapack:bambooTropicalBlueSlab1"}
+}
+}

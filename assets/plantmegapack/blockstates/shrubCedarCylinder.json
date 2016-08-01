@@ -1,0 +1,6 @@
+{
+"variants":{
+"half=lower":{"model":"plantmegapack:shrubCedarCylinder0"},
+"half=upper":{"model":"plantmegapack:shrubCedarCylinder1"}
+}
+}

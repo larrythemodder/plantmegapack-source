@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketAsper"},
+"facing=east":{"model":"plantmegapack:wallBracketAsper","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketAsper","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketAsper","y":270}
+}
+}

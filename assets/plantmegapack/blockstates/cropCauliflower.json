@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropCauliflower0"},
+"age=1":{"model":"plantmegapack:cropCauliflower1"},
+"age=2":{"model":"plantmegapack:cropCauliflower1"},
+"age=3":{"model":"plantmegapack:cropCauliflower2"},
+"age=4":{"model":"plantmegapack:cropCauliflower2"},
+"age=5":{"model":"plantmegapack:cropCauliflower3"},
+"age=6":{"model":"plantmegapack:cropCauliflower3"},
+"age=7":{"model":"plantmegapack:cropCauliflower4"}
+}
+}

@@ -1,0 +1,10 @@
+{
+"variants":{
+"normal":[
+{"model":"plantmegapack:floatingCrestedFloatingheart0"},
+{"model":"plantmegapack:floatingCrestedFloatingheart0","y":90},
+{"model":"plantmegapack:floatingCrestedFloatingheart0","y":180},
+{"model":"plantmegapack:floatingCrestedFloatingheart0","y":270}
+]
+}
+}

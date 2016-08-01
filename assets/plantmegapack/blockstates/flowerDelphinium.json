@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerDelphinium_red"},
+"variant=orange":{"model":"plantmegapack:flowerDelphinium_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerDelphinium_yellow"},
+"variant=green":{"model":"plantmegapack:flowerDelphinium_green"},
+"variant=cyan":{"model":"plantmegapack:flowerDelphinium_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerDelphinium_blue"},
+"variant=purple":{"model":"plantmegapack:flowerDelphinium_purple"},
+"variant=pink":{"model":"plantmegapack:flowerDelphinium_pink"},
+"variant=white":{"model":"plantmegapack:flowerDelphinium_white"}
+}
+}

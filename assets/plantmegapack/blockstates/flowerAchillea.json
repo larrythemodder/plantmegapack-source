@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerAchillea_red"},
+"variant=orange":{"model":"plantmegapack:flowerAchillea_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerAchillea_yellow"},
+"variant=green":{"model":"plantmegapack:flowerAchillea_green"},
+"variant=cyan":{"model":"plantmegapack:flowerAchillea_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerAchillea_blue"},
+"variant=purple":{"model":"plantmegapack:flowerAchillea_purple"},
+"variant=pink":{"model":"plantmegapack:flowerAchillea_pink"},
+"variant=white":{"model":"plantmegapack:flowerAchillea_white"}
+}
+}

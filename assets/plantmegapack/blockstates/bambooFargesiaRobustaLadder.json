@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:bambooFargesiaRobustaLadder"},
+"facing=east":{"model":"plantmegapack:bambooFargesiaRobustaLadder","y":90},
+"facing=south":{"model":"plantmegapack:bambooFargesiaRobustaLadder","y":180},
+"facing=west":{"model":"plantmegapack:bambooFargesiaRobustaLadder","y":270}
+}
+}

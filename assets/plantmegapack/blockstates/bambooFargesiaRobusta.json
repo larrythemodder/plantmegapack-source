@@ -1,0 +1,9 @@
+{
+"variants":{
+"segment=0":{"model":"plantmegapack:bambooFargesiaRobusta0"},
+"segment=1":{"model":"plantmegapack:bambooFargesiaRobusta1"},
+"segment=2":{"model":"plantmegapack:bambooFargesiaRobusta2"},
+"segment=3":{"model":"plantmegapack:bambooFargesiaRobusta3"},
+"segment=4":{"model":"plantmegapack:bambooFargesiaRobusta4"}
+}
+}

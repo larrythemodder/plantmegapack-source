@@ -1,0 +1,8 @@
+{
+"variants":{
+"half=bottom,variant=false":{"model":"plantmegapack:bambooMosoSlab0"},
+"half=bottom,variant=true":{"model":"plantmegapack:bambooMosoSlab0"},
+"half=top,variant=false":{"model":"plantmegapack:bambooMosoSlab1"},
+"half=top,variant=true":{"model":"plantmegapack:bambooMosoSlab1"}
+}
+}

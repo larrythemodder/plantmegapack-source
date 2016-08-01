@@ -1,0 +1,12 @@
+{
+"variants":{
+"age=0":{"model":"plantmegapack:cropChicory0"},
+"age=1":{"model":"plantmegapack:cropChicory1"},
+"age=2":{"model":"plantmegapack:cropChicory1"},
+"age=3":{"model":"plantmegapack:cropChicory2"},
+"age=4":{"model":"plantmegapack:cropChicory2"},
+"age=5":{"model":"plantmegapack:cropChicory3"},
+"age=6":{"model":"plantmegapack:cropChicory3"},
+"age=7":{"model":"plantmegapack:cropChicory4"}
+}
+}

@@ -1,0 +1,7 @@
+{
+"variants":{
+"segment=top":{"model":"plantmegapack:hangingSwedishIvy0"},
+"segment=middle":{"model":"plantmegapack:hangingSwedishIvy1"},
+"segment=bottom":{"model":"plantmegapack:hangingSwedishIvy2"}
+}
+}

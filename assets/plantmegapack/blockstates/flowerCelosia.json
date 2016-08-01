@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerCelosia_red"},
+"variant=orange":{"model":"plantmegapack:flowerCelosia_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerCelosia_yellow"},
+"variant=green":{"model":"plantmegapack:flowerCelosia_green"},
+"variant=cyan":{"model":"plantmegapack:flowerCelosia_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerCelosia_blue"},
+"variant=purple":{"model":"plantmegapack:flowerCelosia_purple"},
+"variant=pink":{"model":"plantmegapack:flowerCelosia_pink"},
+"variant=white":{"model":"plantmegapack:flowerCelosia_white"}
+}
+}

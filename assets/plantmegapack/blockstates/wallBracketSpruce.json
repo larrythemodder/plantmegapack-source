@@ -1,0 +1,8 @@
+{
+"variants":{
+"facing=north":{"model":"plantmegapack:wallBracketSpruce"},
+"facing=east":{"model":"plantmegapack:wallBracketSpruce","y":90},
+"facing=south":{"model":"plantmegapack:wallBracketSpruce","y":180},
+"facing=west":{"model":"plantmegapack:wallBracketSpruce","y":270}
+}
+}

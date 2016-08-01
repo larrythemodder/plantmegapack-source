@@ -1,0 +1,13 @@
+{
+"variants":{
+"variant=red":{"model":"plantmegapack:flowerColumbine_red"},
+"variant=orange":{"model":"plantmegapack:flowerColumbine_orange"},
+"variant=yellow":{"model":"plantmegapack:flowerColumbine_yellow"},
+"variant=green":{"model":"plantmegapack:flowerColumbine_green"},
+"variant=cyan":{"model":"plantmegapack:flowerColumbine_cyan"},
+"variant=blue":{"model":"plantmegapack:flowerColumbine_blue"},
+"variant=purple":{"model":"plantmegapack:flowerColumbine_purple"},
+"variant=pink":{"model":"plantmegapack:flowerColumbine_pink"},
+"variant=white":{"model":"plantmegapack:flowerColumbine_white"}
+}
+}
