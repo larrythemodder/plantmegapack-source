@@ -23,7 +23,7 @@ import plantmegapack.plant.PMPPlantCropDrops;
 import plantmegapack.worldgen.PMPWorldGenerator;
 import plantmegapack.worldgen.PMPWorldgenProfile;
 
-@Mod(modid="plantmegapack", name="Plant Mega Pack", version="1.9.8", canBeDeactivated=false, guiFactory="plantmegapack.gui.core.PMPGuiFactory", acceptedMinecraftVersions="[1.10.2]")
+@Mod(modid="plantmegapack", name="Plant Mega Pack", version="1.10.2 PORT1", canBeDeactivated=false, guiFactory="plantmegapack.gui.core.PMPGuiFactory", acceptedMinecraftVersions="[1.10.2]")
 public class PlantMegaPack {
 	@Mod.Instance("plantmegapack")
 	public static PlantMegaPack instance;
