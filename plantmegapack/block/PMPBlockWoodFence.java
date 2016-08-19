@@ -37,6 +37,7 @@ public class PMPBlockWoodFence
 		setHardness(1.2F);
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
+		OreDictionary.registerOre("fenceWood");
 	}
 	
 	public boolean canPlaceTorchOnTop(IBlockState state, IBlockAccess worldIn, BlockPos pos) {

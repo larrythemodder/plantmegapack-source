@@ -29,5 +29,6 @@ public class PMPBlockWoodLadder
 		setSoundType(SoundType.WOOD);
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
+		OreDictionary.registerOre("ladderWood");
 	}
 }
