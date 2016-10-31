@@ -1,6 +1,6 @@
 # plantmegapack-source
 Plant Mega Pack 1.10 port.
 
-The purpose of this repo is to make the source code for PMP available for other modders to learn from and to work with. Dead mods remaining closed source benefits no one, this way they can still be part of the larger Minecraft mod codebase.
+I've created this repo because I think that letting projects die and keeping their code closed source doesn't benefit anyone. My hope is that PMP becomes a community-driven mod and that my role can simply be as someone who helped it get there. Any and all contributions are welcome. I'm still undecided on the best method to keep developing this mod, but for now this repo is mainly for bug fixes and small updates as Minecraft updates, not major changes to the project. I have also created https://github.com/larrythemodder/pmpnew where I have made a number of large changes to the mod, but I don't know if I'm going to keep working on that.
 
-This repo is not under active development. It will be updated as new versions of Minecraft and Minecraft Forge are released, but no changes to the features of the mod are planned. The field guide has been disabled due to bugs. If anyone wants to fix this, that would be swell.
+Downloads can be found at my website: http://larrysmods.weebly.com/plant-mega-pack.html
