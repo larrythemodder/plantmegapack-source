@@ -50,6 +50,8 @@ public class PMPBlockLeaves
 		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerBlock(this, PMPItemLeaves.class, this.leaves.name());
 		OreDictionary.registerOre(this.leaves.oreDictName, this);
+		OreDictionary.registerOre("leavesTree");
+		OreDictionary.registerOre("treeLeaves");
 	}
 	
 	@SideOnly(Side.CLIENT)

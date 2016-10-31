@@ -28,6 +28,7 @@ public class PMPItemRootMedicinal
 		setHasSubtypes(true);
 		GameRegistry.registerItem(this, name);
 		OreDictionary.registerOre(name, this);
+		OreDictionary.registerOre("rootMedicinal");
 	}
 	
 	@SideOnly(Side.CLIENT)
