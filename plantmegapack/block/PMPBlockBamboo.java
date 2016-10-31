@@ -23,6 +23,7 @@ import plantmegapack.data.PMPDataPlant;
 import plantmegapack.plant.PMPPlant;
 import plantmegapack.plant.PMPPlantCategory;
 import plantmegapack.plant.PMPPlantSoilType;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class PMPBlockBamboo extends PMPBlockBase implements IGrowable {
 	public static final PropertyInteger SEGMENT = PropertyInteger.create("segment", 0, 4);
@@ -33,6 +34,8 @@ public class PMPBlockBamboo extends PMPBlockBase implements IGrowable {
 		setDefaultState(getDefaultState().withProperty(SEGMENT, Integer.valueOf(Integer.valueOf(0).intValue())));
 		setSoundType(SoundType.WOOD);
 		setHarvestLevel("axe", 0);
+		OreDictionary.registerOre("bamboo");
+		OreDictionary.registerOre("materialBamboo");
 	}
 	
 	protected BlockStateContainer createBlockState() {
