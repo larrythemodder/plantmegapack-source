@@ -34,5 +34,6 @@ public class PMPBlockWoodStairs
 		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
+		OreDictionary.registerOre("stairWood");
 	}
 }

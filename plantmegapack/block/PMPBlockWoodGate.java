@@ -32,5 +32,6 @@ public class PMPBlockWoodGate
 		setSoundType(SoundType.WOOD);
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
+		OreDictionary.registerOre("fencegateWood");
 	}
 }

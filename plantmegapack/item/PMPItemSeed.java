@@ -24,6 +24,7 @@ public class PMPItemSeed
 		setCreativeTab(CreativeTabs.MATERIALS);
 		GameRegistry.registerItem(this, this.seed.name());
 		OreDictionary.registerOre(this.seed.oreDictName, this);
+		OreDictionary.registerOre("listAllseed");
 	}
 	
 	public EnumPlantType getPlantType(IBlockAccess world, BlockPos pos) {
