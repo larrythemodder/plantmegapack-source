@@ -47,7 +47,10 @@ public class PMPItemFood extends ItemFood {
 		setUnlocalizedName(this.food.name());
 		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerItem(this, this.food.name());
-		OreDictionary.registerOre(this.food.oreDictName, this);
+		
+		for (int i = 0; i < this.food.oreDictNames.length; i++) {
+			OreDictionary.registerOre(this.food.oreDictNames[i], this);
+		}
 	}
 	
 	public PMPFood getFood() {
