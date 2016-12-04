@@ -136,10 +136,10 @@ public class PMPItemFood extends ItemFood {
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
 		if ((this.food.foodType == PMPFoodType.berr) || (this.food.foodType == PMPFoodType.flav) || (this.food.foodType == PMPFoodType.frui) || (this.food.foodType == PMPFoodType.seed) || (this.food.foodType == PMPFoodType.vege)) {
-			list.add("§6" + I18n.translateToLocal(new StringBuilder().append("foodType.").append(this.food.foodType.name()).toString()) + "§r");
+			list.add(/*"§6" +*/ I18n.translateToLocal(new StringBuilder().append("foodType.").append(this.food.foodType.name()).toString()) /*+ "§r"*/);
 		}
 		if (this.food.isTreeFruit()) {
-			list.add("§7" + I18n.translateToLocal("gui.treeFruitTooltip") + "§r");
+			list.add(/*"§7" +*/ I18n.translateToLocal("gui.treeFruitTooltip") /*+ "§r"*/);
 		}
 		if (this.food.canCraftCereal()) {
 			PMPHelper.addCraftingItemTooltip(list, "gui.cereal");

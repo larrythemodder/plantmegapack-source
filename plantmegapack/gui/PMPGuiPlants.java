@@ -182,7 +182,7 @@ public class PMPGuiPlants
 		String latinName = plantData.attributes.getLatinName();
 		drawString(getFontRenderer(), commonName, xPos, yPos, 5296160);
 		if (plantData.attributes.category != PMPPlantCategory.grou) {
-			commonName = "Â§o" + latinName + "Â§r";
+			commonName = /*"Â§o" +*/ latinName /*+ "Â§r"*/;
 			yPos += getFontRenderer().FONT_HEIGHT + 2;
 			drawString(getFontRenderer(), commonName, xPos, yPos, 8437888);
 		}

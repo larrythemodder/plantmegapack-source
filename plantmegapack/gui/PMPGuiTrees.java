@@ -147,7 +147,7 @@ public class PMPGuiTrees
 				treeTypeKey = "gui.fruitTree";
 				colorCode = '6';
 			}
-			this.treeList.addListboxEntry(sapling.name(), "�" + colorCode + I18n.translateToLocal(treeTypeKey) + "�7:�r " + sapling.getLocalizedName());
+			this.treeList.addListboxEntry(sapling.name(), /*"�" + */colorCode + I18n.translateToLocal(treeTypeKey) /*+ "�7:�r "*/ + sapling.getLocalizedName());
 		}
 	}
 	
@@ -156,7 +156,7 @@ public class PMPGuiTrees
 		int yPos = 40;
 		PMPTree tree = PlantMegaPack.blocks.getSapling(this.treeList.getSelectedItemKey()).getTree();
 		drawString(getFontRenderer(), tree.getLocalizedName(), xPos, yPos, 5296160);
-		String text = "�o" + tree.getLatinName() + "�r";
+		String text = /*"�o" +*/ tree.getLatinName() /*+ "�r"*/;
 		yPos += getFontRenderer().FONT_HEIGHT + 2;
 		drawString(getFontRenderer(), text, xPos, yPos, 8437888);
 	}

@@ -84,8 +84,8 @@ public class PMPItemPowder
 			strength = PlantMegaPack.settings.powderFertilizerStrength;
 			radius = PlantMegaPack.settings.powderFertilizerRadius;
 		}
-		list.add("§7" + I18n.translateToLocal("gui.usesRemaining") + String.format(": §a%d§r", new Object[] { Integer.valueOf(itemStack.getMaxDamage() - itemStack.getItemDamage() + 1) }));
-		list.add("§8" + I18n.translateToLocal("gui.strength") + String.format(": §9%d", new Object[] { Integer.valueOf(strength) }) + "%§r");
-		list.add("§8" + I18n.translateToLocal("gui.radius") + String.format(": §9%d§r", new Object[] { Integer.valueOf(radius) }));
+		list.add(/*"§7" +*/ I18n.translateToLocal("gui.usesRemaining") + String.format(": "/*§a%d§r"*/, new Object[] { Integer.valueOf(itemStack.getMaxDamage() - itemStack.getItemDamage() + 1) }));
+		list.add(/*"§8" +*/ I18n.translateToLocal("gui.strength") + String.format(": "/*§9%d"*/, new Object[] { Integer.valueOf(strength) }) /*+ "%§r"*/);
+		list.add(/*"§8" +*/ I18n.translateToLocal("gui.radius") + String.format(": " /*§9%d§r"*/, new Object[] { Integer.valueOf(radius) }));
 	}
 }

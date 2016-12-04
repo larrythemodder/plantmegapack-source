@@ -43,7 +43,7 @@ public class PMPBlockWoodLog extends BlockLog {
 		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerBlock(this, blockName + "Block");
 		OreDictionary.registerOre(oreDictName + "Log", this);
-		OreDictionary.registerOre("logWood");
+		OreDictionary.registerOre("logWood", this);
 	}
 	
 	protected BlockStateContainer createBlockState() {

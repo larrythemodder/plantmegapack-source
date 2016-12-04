@@ -32,6 +32,6 @@ public class PMPBlockWoodPlanks
 		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(blockName + suffix, this);
-		OreDictionary.registerOre("plankWood");
+		OreDictionary.registerOre("plankWood", this);
 	}
 }

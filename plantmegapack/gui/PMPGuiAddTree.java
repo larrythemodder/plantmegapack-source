@@ -115,7 +115,7 @@ public class PMPGuiAddTree
 					treeTypeKey = "gui.tree";
 					colorCode = '2';
 				}
-				this.treeList.addListboxEntry(sapling.name(), "�" + colorCode + I18n.translateToLocal(treeTypeKey) + "�7:�r " + sapling.getLocalizedName());
+				this.treeList.addListboxEntry(sapling.name(), /*"�" +*/ colorCode + I18n.translateToLocal(treeTypeKey) /*+ "�7:�r "*/ + sapling.getLocalizedName());
 			}
 		}
 	}

@@ -43,6 +43,6 @@ public class PMPItemBook
 			int pctCollected = Math.round(PlantMegaPack.bookRegistry.getPlantsCollected() * 100 / PlantMegaPack.bookRegistry.getPlantsTotal());
 			list.add(String.format("§a%d§7 %s§a %d§7 %s (%d%%)§r", new Object[] { Integer.valueOf(PlantMegaPack.bookRegistry.getPlantsCollected()), text1, Integer.valueOf(PlantMegaPack.bookRegistry.getPlantsTotal()), text2, Integer.valueOf(pctCollected) }));
 		}
-		list.add("§8" + I18n.translateToLocal("gui.plantGuide3") + "§r");
+		list.add(/*"§8" +*/ I18n.translateToLocal("gui.plantGuide3") /*+ "§r"*/);
 	}
 }

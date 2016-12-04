@@ -148,34 +148,36 @@ public class PMPItemPlant extends ItemBlock {
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
 		PMPPlant plant = this.plantBlock.getPlantData().attributes;
 		if ((PlantMegaPack.settings.tooltipLatinName) && (plant.category != PMPPlantCategory.grou)) {
-			list.add(String.format("§7§o%s§r", new Object[] { plant.getLatinName() }));
+			//list.add(String.format("§7§o%s§r", new Object[] { plant.getLatinName() }));
+			list.add(new Object[]{plant.getLatinName()});
 		}
 		if (PlantMegaPack.settings.tooltipCategory) {
-			list.add(String.format("§%s%s§r", new Object[] { Character.valueOf(plant.category.colorCode), plant.category.getLocalizedName() }));
+			//list.add(String.format("§%s%s§r", new Object[] { Character.valueOf(plant.category.colorCode), plant.category.getLocalizedName() }));
+			list.add(new Object[]{Character.valueOf(plant.category.colorCode), plant.category.getLocalizedName()});
 		}
 		if (PlantMegaPack.settings.tooltipConservation) {
-			list.add("§8" + I18n.translateToLocal("gui.conservation") + ": " + PMPPlantConStat.getStatusByID(plant.conservationStatus).getLocalizedNameFormatted());
+			list.add(/*"§8" +*/ I18n.translateToLocal("gui.conservation") + ": " + PMPPlantConStat.getStatusByID(plant.conservationStatus).getLocalizedNameFormatted());
 		}
 		if (PlantMegaPack.settings.tooltipDrops) {
 			if (plant.category.creativeTab == PMPTab.aqua) {
 				if (plant.category == PMPPlantCategory.cora) {
 					if (plant.flowerID >= 0) {
-						list.add("§8" + I18n.translateToLocal("gui.crafting") + ": " + PMPColor.getColorFromID(plant.flowerID).getLocalizedNameFormatted() + " §9" + I18n.translateToLocal("gui.coralFragment") + "§r");
+						list.add(/*"§8" +*/ I18n.translateToLocal("gui.crafting") + ": " + PMPColor.getColorFromID(plant.flowerID).getLocalizedNameFormatted() + " "/*§9"*/ + I18n.translateToLocal("gui.coralFragment") /*+ "§r"*/);
 					}
 				}
 			} else
 			{
 				if ((plant.flowerID >= 0) || (PMPPlant.hasColorVariants(plant))) {
 					PMPColor color = PMPColor.getColorFromID(PMPPlant.hasColorVariants(plant) ? itemStack.getMetadata() : plant.flowerID);
-					list.add("§8" + I18n.translateToLocal("gui.flower") + ": " + color.getLocalizedNameFormatted());
+					list.add(/*"§8" +*/ I18n.translateToLocal("gui.flower") + ": " + color.getLocalizedNameFormatted());
 				}
 				if (plant.stemID >= 0) {
 					PMPStem stem = PMPStem.getStemFromID(PMPPlant.hasColorVariants(plant) ? 1 : plant.stemID);
-					list.add("§8" + I18n.translateToLocal("gui.stem") + ": " + stem.getLocalizedNameFormatted());
+					list.add(/*"§8" +*/ I18n.translateToLocal("gui.stem") + ": " + stem.getLocalizedNameFormatted());
 				}
 				if (plant.rootID >= 0) {
 					PMPRootMedicinal root = PMPRootMedicinal.getRootFromID(plant.rootID);
-					list.add("§8" + I18n.translateToLocal("gui.root") + ": " + root.getLocalizedNameFormatted());
+					list.add(/*"§8" +*/ I18n.translateToLocal("gui.root") + ": " + root.getLocalizedNameFormatted());
 				}
 				if ((plant.category == PMPPlantCategory.fung) && (!plant.isPoisonPlant())) {
 					PMPHelper.addCraftingItemTooltip(list, Items.MUSHROOM_STEW);
@@ -183,7 +185,7 @@ public class PMPItemPlant extends ItemBlock {
 			}
 			PMPItemFood foodDrop = PlantMegaPack.plantDrops.getFoodItem(plant.name());
 			if (foodDrop != null) {
-				list.add("§8" + I18n.translateToLocal("gui.food") + ": §a" + foodDrop.getLocalizedName() + "§r");
+				list.add(/*"§8" +*/ I18n.translateToLocal("gui.food") + ": "/*§a"*/ + foodDrop.getLocalizedName() /*+ "§r"*/);
 			}
 		}
 		if (PlantMegaPack.settings.tooltipCrafting) {
@@ -222,7 +224,7 @@ public class PMPItemPlant extends ItemBlock {
 	
 	private void addWarningTooltips(List list, PMPPlant plant) {
 		if (plant.isPoisonPlant()) {
-			list.add("§8" + I18n.translateToLocal("gui.warning") + ": §c" + I18n.translateToLocal("gui.poison") + "§r");
+			list.add(/*"§8" +*/ I18n.translateToLocal("gui.warning") + ": "/*§c"*/ + I18n.translateToLocal("gui.poison") /*+ "§r"*/);
 		}
 	}
 }

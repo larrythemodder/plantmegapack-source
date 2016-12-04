@@ -56,9 +56,9 @@ public class PMPItemSalve
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
 		if (this.salve == PMPSalve.salveHealth) {
-			list.add("§8" + I18n.translateToLocal("gui.effect") + ": §9" + String.format("%d", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.healthHealed") + "§r");
+			list.add(/*"§8" +*/ I18n.translateToLocal("gui.effect") + ": " /*§9"*/ + String.format("%d", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.healthHealed") /*+ "§r"*/);
 		} else {
-			list.add("§8" + I18n.translateToLocal("gui.effect") + ": §9" + I18n.translateToLocal("gui.duration") + String.format(" %d ", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.seconds") + "§r");
+			list.add(/*"§8" +*/ I18n.translateToLocal("gui.effect") + ": " /*§9"*/ + I18n.translateToLocal("gui.duration") + String.format(" %d ", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.seconds") /*+ "§r"*/);
 		}
 	}
 	

@@ -28,7 +28,7 @@ public class PMPItemRootMedicinal
 		setHasSubtypes(true);
 		GameRegistry.registerItem(this, name);
 		OreDictionary.registerOre(name, this);
-		OreDictionary.registerOre("rootMedicinal");
+		OreDictionary.registerOre("rootMedicinal", this);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -41,7 +41,7 @@ public class PMPItemRootMedicinal
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
 		PMPRootMedicinal root = PMPRootMedicinal.getRootFromID(itemStack.getMetadata());
-		list.add("§7" + I18n.translateToLocal("gui.effect") + ": " + root.getLocalizedNameFormatted() + "§r");
+		list.add(/*"§7" +*/ I18n.translateToLocal("gui.effect") + ": " + root.getLocalizedNameFormatted() /*+ "§r"*/);
 		PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getSalveItem(PMPSalve.getSalveFromID(itemStack.getMetadata())));
 	}
 }

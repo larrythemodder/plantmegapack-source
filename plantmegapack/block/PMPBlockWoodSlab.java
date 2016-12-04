@@ -52,7 +52,7 @@ public abstract class PMPBlockWoodSlab
 		setHardness(1.2F);
 		setResistance(5.0F);
 		setSoundType(SoundType.WOOD);
-		OreDictionary.registerOre("slabWood");
+		OreDictionary.registerOre("slabWood", this);
 		setDefaultState(getDefaultState().withProperty(VARIANT, Boolean.valueOf(false)).withProperty(BlockSlab.HALF, isDouble() ? BlockSlab.EnumBlockHalf.TOP : BlockSlab.EnumBlockHalf.BOTTOM));
 		if (!isDouble()) {
 			setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));

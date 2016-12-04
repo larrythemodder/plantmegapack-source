@@ -41,7 +41,7 @@ public class PMPBlockSapling
 		setSoundType(SoundType.PLANT);
 		GameRegistry.registerBlock(this, PMPItemSapling.class, this.treeData.sapling.name());
 		OreDictionary.registerOre(this.treeData.sapling.oreDictName, this);
-		OreDictionary.registerOre("treeSapling");
+		OreDictionary.registerOre("treeSapling", this);
 	}
 	
 	public PMPTree getTree() {

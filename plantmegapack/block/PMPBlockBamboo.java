@@ -34,8 +34,8 @@ public class PMPBlockBamboo extends PMPBlockBase implements IGrowable {
 		setDefaultState(getDefaultState().withProperty(SEGMENT, Integer.valueOf(Integer.valueOf(0).intValue())));
 		setSoundType(SoundType.WOOD);
 		setHarvestLevel("axe", 0);
-		OreDictionary.registerOre("bamboo");
-		OreDictionary.registerOre("materialBamboo");
+		OreDictionary.registerOre("bamboo", this);
+		OreDictionary.registerOre("materialBamboo", this);
 	}
 	
 	protected BlockStateContainer createBlockState() {
