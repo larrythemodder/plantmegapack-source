@@ -27,6 +27,12 @@ import plantmegapack.plant.PMPPlantCropDrops;
 import plantmegapack.worldgen.PMPWorldGenerator;
 import plantmegapack.worldgen.PMPWorldgenProfile;
 
+/*
+ * To-do:
+ * 
+ * 1. Change PMP recipes to OreDict based (ex: tomato soup)
+ */
+
 @Mod(modid="plantmegapack", name="Plant Mega Pack", version="1.10.2 PORT2", canBeDeactivated=false, guiFactory="plantmegapack.gui.core.PMPGuiFactory", acceptedMinecraftVersions="[1.10.2]")
 public class PlantMegaPack {
 	@Mod.Instance("plantmegapack")
