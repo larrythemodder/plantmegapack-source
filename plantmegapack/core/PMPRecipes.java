@@ -33,8 +33,7 @@ import plantmegapack.object.PMPWood;
 import plantmegapack.plant.PMPPlant;
 import plantmegapack.plant.PMPPlantCategory;
 
-public class PMPRecipes
-{
+public class PMPRecipes {
 	public void init() {
 		int recipes = CraftingManager.getInstance().getRecipeList().size();
 		initBambooBlocks();
@@ -58,7 +57,6 @@ public class PMPRecipes
 		initSalves();
 		initSandwiches();
 		initSaplings();
-		initStirFry();
 		initStuffedPeppers();
 		initTeaDrinks();
 		initTortillas();
@@ -71,13 +69,13 @@ public class PMPRecipes
 	
 	private void initBambooBlocks() {
 		for (PMPBamboo bamboo : PMPBamboo.values()) {
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0), new Object[] { "xxx", "xxx", "xxx", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooSlab(bamboo.name()), 6, 0), new Object[] { "   ", "xxx", "   ", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooStairs(bamboo.name()), 4, 0), new Object[] { "  x", " xx", "xxx", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooDoor(bamboo.name()), 3, 0), new Object[] { "xx ", "xx ", "xx ", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooFence(bamboo.name()), 3, 0), new Object[] { "   ", "xyx", "xyx", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0), Character.valueOf('y'), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooGate(bamboo.name()), 1, 0), new Object[] { "   ", "xyx", "xyx", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()), 1, 0), Character.valueOf('y'), new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooLadder(bamboo.name()), 1, 0), new Object[] { "x x", "xxx", "x x", Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()), 1, 0) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 1), new Object[] { "xxx", "xxx", "xxx", 'x',PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooSlab(bamboo.name()), 6), new Object[] { "xxx", 'x', PlantMegaPack.blocks.getBambooBlock(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooStairs(bamboo.name()), 4), new Object[] { "  x", " xx", "xxx", 'x', PlantMegaPack.blocks.getBambooBlock(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooDoor(bamboo.name()), 3), new Object[] { "xx", "xx", "xx", 'x', PlantMegaPack.blocks.getBambooBlock(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooFence(bamboo.name()), 3), new Object[] { "xyx", "xyx", 'x', PlantMegaPack.blocks.getBambooBlock(bamboo.name()), 'y', PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooGate(bamboo.name())), new Object[] { "xyx", "xyx", 'x', PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()), 'y', PlantMegaPack.blocks.getBambooBlock(bamboo.name()) }));
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getBambooLadder(bamboo.name())), new Object[] { "x x", "xxx", "x x", 'x', PlantMegaPack.blocks.getPlantBlockByName(bamboo.name()) }));
 		}
 	}
 	
@@ -92,25 +90,26 @@ public class PMPRecipes
 	}
 	
 	private void createBookRecipe(PMPFlower flower, PMPStem stem, PMPRootMedicinal root) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getBookItem(), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getBookItem(), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
 			.getFlowerItem(flower), 1, 0), new ItemStack(PlantMegaPack.items
 			.getStemItem(stem), 1, 0), new ItemStack(PlantMegaPack.items
 			.getMedicinalRootItem(), 1, root.ID), new ItemStack(Items.BOOK, 1, 0) }));
 	}*/
 	
 	private void initBowlFoods() {
-		createBowlCerealRecipe(PMPFood.foodQuinoaSeeds, PMPFood.foodQuinoaCereal);
+		createBowlCerealRecipe("cropQuinoa", PMPFood.foodQuinoaCereal);
 		
-		createBowlDessertRecipe(PMPFood.foodAvocado, PMPFood.foodAvocadoPudding);
-		createBowlDessertRecipe(PMPFood.foodElderberry, PMPFood.foodElderberrySorbet);
-		createBowlDessertRecipe(PMPFood.foodGrapefruit, PMPFood.foodGrapefruitSorbet);
-		createBowlDessertRecipe(PMPFood.foodSnowberry, PMPFood.foodSnowberryCustard);
+		createBowlDessertRecipe("cropAvocado", PMPFood.foodAvocadoPudding);
+		createBowlDessertRecipe("cropElderberry", PMPFood.foodElderberrySorbet);
+		createBowlDessertRecipe("cropGrapefruit", PMPFood.foodGrapefruitSorbet);
+		createBowlDessertRecipe("cropSnowberry", PMPFood.foodSnowberryCustard);
 		
-		createBowlSoupRecipe(PMPFood.foodBroccoli, PMPFood.foodBroccoliSoup);
-		createBowlSoupRecipe(PMPFood.foodHorseradish, PMPFood.foodHorseradishSoup);
-		createBowlSoupRecipe(PMPFood.foodLentil, PMPFood.foodLentilSoup);
-		createBowlSoupRecipe(PMPFood.foodMozuku, PMPFood.foodMozukuSoup);
-		createBowlSoupRecipe(PMPFood.foodTomato, PMPFood.foodTomatoSoup);
+		createBowlSoupRecipe("cropBroccoli", PMPFood.foodBroccoliSoup);
+		createBowlSoupRecipe("cropHorseradish", PMPFood.foodHorseradishSoup);
+		createBowlSoupRecipe("cropLentil", PMPFood.foodLentilSoup);
+		createBowlSoupRecipe("cropMozuku", PMPFood.foodMozukuSoup);
+		createBowlSoupRecipe("cropTomato", PMPFood.foodTomatoSoup);
+		
 		for (PMPPlant plant1 : PMPPlant.values()) {
 			if ((plant1.category == PMPPlantCategory.fung) && (!plant1.isPoisonPlant())) {
 				Item item1 = Item.getItemFromBlock(PlantMegaPack.blocks.getPlantBlockByName(plant1.name()));
@@ -125,27 +124,34 @@ public class PMPRecipes
 		}
 	}
 	
-	private void createBowlCerealRecipe(PMPFood input, PMPFood output) {
-		Item ingredient = PlantMegaPack.items.getFoodItem(input);
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { new ItemStack(Items.BOWL, 1, 0), new ItemStack(ingredient), new ItemStack(ingredient), new ItemStack(ingredient) }));
+	private void createBowlCerealRecipe(String input, PMPFood output) {
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output)), new Object[] { Items.BOWL, input, input, input }));
 	}
 	
-	private void createBowlDessertRecipe(PMPFood input, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { " w ", "xyx", " z ", 
-		
-			Character.valueOf('w'), new ItemStack(Items.SUGAR, 1, 0), 
-			Character.valueOf('x'), new ItemStack(PlantMegaPack.items.getFoodItem(input), 1, 0), 
-			Character.valueOf('y'), new ItemStack(Items.MILK_BUCKET, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.BOWL, 1, 0) }));
+	private void createBowlDessertRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{" w ", "xyx", " z ",
+			'w', Items.SUGAR,
+			'x', input, 
+			'y', Items.MILK_BUCKET,
+			'z', Items.BOWL
+		}));
+	}
+	
+	private void createBowlSoupRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOut, new Object[]{
+			Items.BOWL, input, input
+		}));
 	}
 	
 	private void createBowlSoupRecipe(PMPFood input, PMPFood output) {
 		Item ingredient = PlantMegaPack.items.getFoodItem(input);
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { new ItemStack(Items.BOWL, 1, 0), new ItemStack(ingredient), new ItemStack(ingredient) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output)), new Object[] { Items.BOWL, ingredient, ingredient });
 	}
 	
 	private void createBowlStewRecipe(Item ingredient1, Item ingredient2, Item output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(Items.BOWL, 1, 0), new ItemStack(ingredient1), new ItemStack(ingredient2) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] { Items.BOWL, ingredient1, ingredient2 });
 	}
 	
 	private void initCoralFragments() {
@@ -161,83 +167,86 @@ public class PMPRecipes
 		int localPMPPlant1 = arrayOfPMPFragment.length;
 		for (int plant = 0; plant < localPMPPlant1; plant++) {
 			PMPFragment fragment = arrayOfPMPFragment[plant];
-			
 			PMPItemFragment coralFragmentItem = PlantMegaPack.items.getCoralFragmentItem(fragment);
-			
-			CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.ARROW, 1, 0), new Object[] {
-					new ItemStack(coralFragmentItem, 1, 0), new ItemStack(Items.STICK, 1, 0), new ItemStack(Items.FEATHER, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.DYE, 1, PMPColor.getColorFromID(fragment.ID).dyeID), new Object[] {
-					new ItemStack(coralFragmentItem, 1, 0) }));
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.ARROW), new Object[] { coralFragmentItem, Items.STICK, Items.FEATHER });
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.DYE, 1, PMPColor.getColorFromID(fragment.ID).dyeID), new Object[] { coralFragmentItem });
 		}
 	}
 	
 	private void createCoralFragmentRecipe(PMPPlant plant) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getCoralFragmentItem(PMPFragment.getFragmentFromID(plant.flowerID)), 2, 0), new Object[] { new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(plant.name()), 1, 0) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getCoralFragmentItem(PMPFragment.getFragmentFromID(plant.flowerID)), 2), new Object[] { PlantMegaPack.blocks.getPlantBlockByName(plant.name()) }));
 	}
 	
 	private void initCorn() {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour), 1, 0), new Object[] {
-				new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCorn)) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornTortilla), 1, 4), new Object[] {
-				" x ", "x x", " x ", Character.valueOf('x'), PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread), 1, 0), new Object[] {
-				"   ", "   ", "xxx", Character.valueOf('x'), PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour)), new Object[] {
+			"foodCorn"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornTortilla), 1, 4), new Object[] {
+			" x ", "x x", " x ", 'x', "foodCornFlour"
+		}));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread)), new Object[]{
+			"xxx", 'x', "foodCornFlour"
+		}));
 	}
 	
 	private void initDesserts() {
-		createDessertCookieRecipe(PMPFood.foodPeanutButter, PMPFood.foodCookiePeanutButter);
+		createDessertCookieRecipe("foodPeanutButter", PMPFood.foodCookiePeanutButter);
 		
-		createDessertRecipe(PMPFood.foodApricot, PMPFood.foodApricotGalette);
-		createDessertRecipe(PMPFood.foodBeautyberry, PMPFood.foodBeautyberryTurnover);
-		createDessertRecipe(PMPFood.foodBlackberry, PMPFood.foodBlackberryDanish);
-		createDessertRecipe(PMPFood.foodGooseberry, PMPFood.foodGooseberryCobbler);
-		createDessertRecipe(PMPFood.foodGrapesPurple, PMPFood.foodGrapeTart);
-		createDessertRecipe(PMPFood.foodHuckleberry, PMPFood.foodHuckleberryTart);
-		createDessertRecipe(PMPFood.foodMango, PMPFood.foodMangoBrulee);
-		createDessertRecipe(PMPFood.foodOrangeberry, PMPFood.foodOrangeberrySquare);
-		createDessertRecipe(PMPFood.foodPear, PMPFood.foodPearCrumble);
-		createDessertRecipe(PMPFood.foodPlum, PMPFood.foodPlumTart);
-		createDessertRecipe(PMPFood.foodPorcelainberry, PMPFood.foodPorcelainberryTart);
-		createDessertRecipe(PMPFood.foodStrawberry, PMPFood.foodStrawberryDelight);
+		createDessertRecipe("cropApricot", PMPFood.foodApricotGalette);
+		createDessertRecipe("cropBeautyberry", PMPFood.foodBeautyberryTurnover);
+		createDessertRecipe("cropBlackberry", PMPFood.foodBlackberryDanish);
+		createDessertRecipe("cropGooseberry", PMPFood.foodGooseberryCobbler);
+		createDessertRecipe("cropGrapes", PMPFood.foodGrapeTart);
+		createDessertRecipe("cropHuckleberry", PMPFood.foodHuckleberryTart);
+		createDessertRecipe("cropMango", PMPFood.foodMangoBrulee);
+		createDessertRecipe("cropOrangeberry", PMPFood.foodOrangeberrySquare);
+		createDessertRecipe("cropPear", PMPFood.foodPearCrumble);
+		createDessertRecipe("cropPlum", PMPFood.foodPlumTart);
+		createDessertRecipe("cropPorcelainberry", PMPFood.foodPorcelainberryTart);
+		createDessertRecipe("cropStrawberry", PMPFood.foodStrawberryDelight);
 		
-		createDessertMuffinRecipes(PMPFood.foodBlueberry, PMPFood.foodBlueberryMuffin);
-		createDessertMuffinRecipes(PMPFood.foodOrange, PMPFood.foodOrangeMuffin);
+		createDessertMuffinRecipes("cropBlueberry", PMPFood.foodBlueberryMuffin);
+		createDessertMuffinRecipes("cropOrange", PMPFood.foodOrangeMuffin);
 		
-		createDessertPieRecipe(Items.APPLE, PMPFood.foodApplePie);
-		createDessertPieRecipe(PMPFood.foodAppleGreen, PMPFood.foodApplePie);
-		createDessertPieRecipe(PMPFood.foodAppleYellow, PMPFood.foodApplePie);
-		createDessertPieRecipe(PMPFood.foodBanana, PMPFood.foodBananaCreamPie);
-		createDessertPieRecipe(PMPFood.foodCherry, PMPFood.foodCherryPie);
-		createDessertPieRecipe(PMPFood.foodCoconut, PMPFood.foodCoconutCreamPie);
-		createDessertPieRecipe(PMPFood.foodKiwi, PMPFood.foodKiwiPie);
-		createDessertPieRecipe(PMPFood.foodPineapple, PMPFood.foodPineappleCake);
+		createDessertPieRecipe("cropApple", PMPFood.foodApplePie);
+		createDessertPieRecipe("cropAppleGreen", PMPFood.foodApplePie);
+		createDessertPieRecipe("cropAppleYellow", PMPFood.foodApplePie);
+		createDessertPieRecipe("cropBanana", PMPFood.foodBananaCreamPie);
+		createDessertPieRecipe("cropCherry", PMPFood.foodCherryPie);
+		createDessertPieRecipe("cropCoconut", PMPFood.foodCoconutCreamPie);
+		createDessertPieRecipe("cropKiwi", PMPFood.foodKiwiPie);
+		createDessertPieRecipe("cropPineapple", PMPFood.foodPineappleCake);
 	}
 	
-	private void createDessertRecipe(PMPFood input, PMPFood output) {
-		Item ingredient = PlantMegaPack.items.getFoodItem(input);
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { "   ", "xwx", "yzy", 
-			Character.valueOf('w'), new ItemStack(ingredient, 1, 0), 
-			Character.valueOf('x'), new ItemStack(Items.SUGAR, 1, 0), 
-			Character.valueOf('y'), new ItemStack(Items.WHEAT, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.EGG, 1, 0) }));
+	private void createDessertRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{ "xwx", "yzy",
+			'w', input,
+			'x', Items.SUGAR,
+			'y', Items.WHEAT,
+			'z', Items.EGG
+		}));
 	}
 	
-	private void createDessertCookieRecipe(PMPFood input, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 6, 0), new Object[] { "   ", "zyz", "   ", 
-			Character.valueOf('y'), new ItemStack(PlantMegaPack.items.getFoodItem(input), 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.WHEAT, 1, 0) }));
+	private void createDessertCookieRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output), 6);
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{ "zyz",
+			'y', input, 
+			'z', Items.WHEAT
+		}));
 	}
 	
-	private void createDessertMuffinRecipes(PMPFood input, PMPFood output) {
+	private void createDessertMuffinRecipes(String input, PMPFood output) {
 		createDessertMuffinRecipe(input, Items.BREAD, output);
 		createDessertMuffinRecipe(input, PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread), output);
 	}
 	
-	private void createDessertMuffinRecipe(PMPFood input, Item bread, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 4, 0), new Object[] { "   ", "xyx", "   ", 
-		
-			Character.valueOf('x'), new ItemStack(PlantMegaPack.items.getFoodItem(input), 1, 0), 
-			Character.valueOf('y'), new ItemStack(bread, 1, 0) }));
+	private void createDessertMuffinRecipe(String input, Item bread, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output), 4);
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{ "xyx",
+			'x', input,
+			'y', bread
+		}));
 	}
 	
 	private void createDessertPieRecipe(PMPFood input, PMPFood output) {
@@ -245,22 +254,32 @@ public class PMPRecipes
 	}
 	
 	private void createDessertPieRecipe(Item input, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { "   ", "xy ", "z  ", 
-			Character.valueOf('x'), new ItemStack(input, 1, 0), 
-			Character.valueOf('y'), new ItemStack(Items.SUGAR, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.EGG, 1, 0) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output)), new Object[]{ "xy ", "z  ", 
+			'x', input, 
+			'y', Items.SUGAR, 
+			Character.valueOf('z'), Items.EGG
+		}));
+	}
+	
+	private void createDessertPieRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{ "xy", "z ",
+			'x', input,
+			'y', Items.SUGAR,
+			'z', Items.EGG
+		}));
 	}
 	
 	private void initFlowers() {
 		for (PMPFlower flower : PMPFlower.values()) {
-			CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.DYE, 1, flower.dyeMeta), new Object[] { new ItemStack(PlantMegaPack.items.getFlowerItem(flower), 1, 0) }));
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.DYE, 1, flower.dyeMeta), new Object[] { PlantMegaPack.items.getFlowerItem(flower) });
 		}
 	}
 	
 	private void initFoodWraps() {
-		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour), 1, 0), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCorn), 3, 0));
-		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantGRN.name()), 1, 0), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3, 0));
-		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantYEL.name()), 1, 0), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3, 0));
+		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour)), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCorn), 3));
+		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantGRN.name())), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3));
+		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantYEL.name())), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3));
 		for (PMPFood food1 : PMPFood.values()) {
 			if (food1.foodType == PMPFoodType.vege) {
 				for (PMPFood food2 : PMPFood.values()) {
@@ -273,8 +292,9 @@ public class PMPRecipes
 	}
 	
 	private void createEmptyFoodWrapRecipe(ItemStack input, ItemStack output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(output, new Object[] { "   ", "x x", " x ", 
-			Character.valueOf('x'), input }));
+		GameRegistry.addShapedRecipe(output, new Object[]{ "x x", " x ", 
+			'x', input
+		});
 	}
 	
 	private void createFoodWrapRecipes(PMPFood input1, PMPFood input2) {
@@ -300,10 +320,9 @@ public class PMPRecipes
 	}
 	
 	private void createFoodWrapRecipe(PMPFood input1, PMPFood input2, Item meat, PMPFood wrapInput, PMPFood wrapOutput) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(wrapOutput), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(input1), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input2), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(wrapInput), 1, 0), new ItemStack(meat, 1, 0) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(wrapOutput)), new Object[]{
+			PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(wrapInput), meat
+		}));
 	}
 	
 	private void initFruitBowls() {
@@ -323,63 +342,71 @@ public class PMPRecipes
 	}
 	
 	private void createFruitBowlRecipe(PMPFood input1, PMPFood input2, PMPFood input3, PMPItemFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(Items.BOWL, 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input1)), new ItemStack(PlantMegaPack.items.getFoodItem(input2)), new ItemStack(PlantMegaPack.items.getFoodItem(input3)) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[]{
+			Items.BOWL, PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(input3)
+		}));
 	}
 	
 	private void initFruitDrinks() {
-		createFruitDrinkRecipe(PMPFood.foodAcaiberry, PMPFood.foodAcaiberrySparkler);
-		createFruitDrinkRecipe(PMPFood.foodBeautyberry, PMPFood.foodBeautyberryBlazer);
-		createFruitDrinkRecipe(PMPFood.foodBlackberry, PMPFood.foodBlackberryTumbler);
-		createFruitDrinkRecipe(PMPFood.foodBlueberry, PMPFood.foodBlueberrySlushie);
-		createFruitDrinkRecipe(PMPFood.foodElderberry, PMPFood.foodElderberrySpritzer);
-		createFruitDrinkRecipe(PMPFood.foodGooseberry, PMPFood.foodGooseberryShake);
-		createFruitDrinkRecipe(PMPFood.foodHuckleberry, PMPFood.foodHuckleberryBubbler);
-		createFruitDrinkRecipe(PMPFood.foodMulberry, PMPFood.foodMulberryDazzler);
-		createFruitDrinkRecipe(PMPFood.foodOrangeberry, PMPFood.foodOrangeberryWhip);
-		createFruitDrinkRecipe(PMPFood.foodPorcelainberry, PMPFood.foodPorcelainberryMixer);
-		createFruitDrinkRecipe(PMPFood.foodSnowberry, PMPFood.foodSnowberryCooler);
-		createFruitDrinkRecipe(PMPFood.foodStrawberry, PMPFood.foodStrawberrySmoothie);
+		createFruitDrinkRecipe("cropAcaiberry", PMPFood.foodAcaiberrySparkler);
+		createFruitDrinkRecipe("cropBeautyberry", PMPFood.foodBeautyberryBlazer);
+		createFruitDrinkRecipe("cropBlackberry", PMPFood.foodBlackberryTumbler);
+		createFruitDrinkRecipe("cropBlueberry", PMPFood.foodBlueberrySlushie);
+		createFruitDrinkRecipe("cropElderberry", PMPFood.foodElderberrySpritzer);
+		createFruitDrinkRecipe("cropGooseberry", PMPFood.foodGooseberryShake);
+		createFruitDrinkRecipe("cropHuckleberry", PMPFood.foodHuckleberryBubbler);
+		createFruitDrinkRecipe("cropMulberry", PMPFood.foodMulberryDazzler);
+		createFruitDrinkRecipe("cropOrangeberry", PMPFood.foodOrangeberryWhip);
+		createFruitDrinkRecipe("cropPorcelainberry", PMPFood.foodPorcelainberryMixer);
+		createFruitDrinkRecipe("cropSnowberry", PMPFood.foodSnowberryCooler);
+		createFruitDrinkRecipe("cropStrawberry", PMPFood.foodStrawberrySmoothie);
 		
-		createFruitDrinkRecipe(PMPFood.foodAppleGreen, PMPFood.foodAppleCider);
-		createFruitDrinkRecipe(PMPFood.foodAppleYellow, PMPFood.foodAppleCider);
-		createFruitDrinkRecipe(PMPFood.foodApricot, PMPFood.foodApricotNectar);
-		createFruitDrinkRecipe(PMPFood.foodAvocado, PMPFood.foodAvocadoHurricane);
-		createFruitDrinkRecipe(PMPFood.foodBanana, PMPFood.foodBananaBreeze);
-		createFruitDrinkRecipe(PMPFood.foodCherry, PMPFood.foodCherryCrush);
-		createFruitDrinkRecipe(PMPFood.foodCoconut, PMPFood.foodCoconutCreamer);
-		createFruitDrinkRecipe(PMPFood.foodGrapefruit, PMPFood.foodGrapefruitSunrise);
-		createFruitDrinkRecipe(PMPFood.foodGrapesPurple, PMPFood.foodGrapeInfusion);
-		createFruitDrinkRecipe(PMPFood.foodKiwi, PMPFood.foodKiwiSplash);
-		createFruitDrinkRecipe(PMPFood.foodMango, PMPFood.foodMangoDreamer);
+		createFruitDrinkRecipe("cropAppleGreen", PMPFood.foodAppleCider);
+		createFruitDrinkRecipe("cropAppleYellow", PMPFood.foodAppleCider);
+		createFruitDrinkRecipe("cropApricot", PMPFood.foodApricotNectar);
+		createFruitDrinkRecipe("cropAvocado", PMPFood.foodAvocadoHurricane);
+		createFruitDrinkRecipe("cropBanana", PMPFood.foodBananaBreeze);
+		createFruitDrinkRecipe("cropCherry", PMPFood.foodCherryCrush);
+		createFruitDrinkRecipe("cropCoconut", PMPFood.foodCoconutCreamer);
+		createFruitDrinkRecipe("cropGrapefruit", PMPFood.foodGrapefruitSunrise);
+		createFruitDrinkRecipe("cropGrapes", PMPFood.foodGrapeInfusion);
+		createFruitDrinkRecipe("cropKiwi", PMPFood.foodKiwiSplash);
+		createFruitDrinkRecipe("cropMango", PMPFood.foodMangoDreamer);
 		
-		createFruitDrinkRecipe(PMPFood.foodOrange, PMPFood.foodOrangeJulep);
-		createFruitDrinkRecipe(PMPFood.foodPear, PMPFood.foodPearPuree);
-		createFruitDrinkRecipe(PMPFood.foodPineapple, PMPFood.foodPinaColada);
-		createFruitDrinkRecipe(PMPFood.foodPlum, PMPFood.foodPlumSoda);
-		createFruitDrinkRecipe(PMPFood.foodPricklyPearFruit, PMPFood.foodPricklyPearTwister);
+		createFruitDrinkRecipe("cropOrange", PMPFood.foodOrangeJulep);
+		createFruitDrinkRecipe("cropPear", PMPFood.foodPearPuree);
+		createFruitDrinkRecipe("cropPineapple", PMPFood.foodPinaColada);
+		createFruitDrinkRecipe("cropPlum", PMPFood.foodPlumSoda);
+		createFruitDrinkRecipe("cropPricklyPearFruit", PMPFood.foodPricklyPearTwister);
 		
-		createFruitDrinkRecipe(PMPFood.foodWasabiStem, PMPFood.foodWasabiQuencher);
+		createFruitDrinkRecipe("cropWasabi", PMPFood.foodWasabiQuencher);
 		
-		createFruitDrinkRecipe(Items.APPLE, PMPFood.foodAppleCider);
-		createFruitDrinkRecipe(Items.CARROT, PMPFood.foodCarrotJuice);
-	}
-	
-	private void createFruitDrinkRecipe(PMPFood input, PMPFood output) {
-		createFruitDrinkRecipe(PlantMegaPack.items.getFoodItem(input), output);
+		createFruitDrinkRecipe("cropApple", PMPFood.foodAppleCider);
+		createFruitDrinkRecipe("cropCarrot", PMPFood.foodCarrotJuice);
 	}
 	
 	private void createFruitDrinkRecipe(Item input, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { "www", "xyx", " z ", 
-			Character.valueOf('w'), new ItemStack(input, 1, 0), 
-			Character.valueOf('x'), new ItemStack(Items.SUGAR, 1, 0), 
-			Character.valueOf('y'), new ItemStack(Items.MILK_BUCKET, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.GLASS_BOTTLE, 1, 0) }));
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addShapedRecipe(iOut, new Object[]{"www", "xyx", " z ", 
+			'w', input,
+			'x', Items.SUGAR, 
+			'y', Items.MILK_BUCKET, 
+			'z', Items.GLASS_BOTTLE
+		});
+	}
+	
+	private void createFruitDrinkRecipe(String input, PMPFood output) {
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output));
+		GameRegistry.addRecipe(new ShapedOreRecipe(iOut, new Object[]{"www", "xyx", " z ",
+			'w', input,
+			'x', Items.SUGAR,
+			'y', Items.MILK_BUCKET,
+			'z', Items.GLASS_BOTTLE
+		}));
 	}
 	
 	private void initFurnaceRecipes() {
-		GameRegistry.addSmelting(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(PMPFood.foodCornTortilla), 4, 0), 0.1F);
+		GameRegistry.addSmelting(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour)), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornTortilla), 4), 0.1F);
 	}
 	
 	private void initHangingPlants() {
@@ -409,11 +436,11 @@ public class PMPRecipes
 	}
 	
 	private void createHangingPlantRecipe(Block input, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { " x ", " y ", " z ", 
-		
-			Character.valueOf('x'), new ItemStack(Items.IRON_INGOT, 1, 0), 
-			Character.valueOf('y'), new ItemStack(input, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.BOWL, 1, 0) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { "x", "y", "z", 
+			'x', Items.IRON_INGOT, 
+			'y', input, 
+			'z', Items.BOWL
+		}));
 	}
 	
 	private void initJelly() {
@@ -434,10 +461,9 @@ public class PMPRecipes
 	
 	/** TODO: SPECIFIC FRUIT JELLIES, NOT 7000 JELLY RECIPES**/
 	private void createJellyRecipe(PMPFood input1, PMPFood input2, PMPFood input3) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodJelly), 1, 0), new Object[] { new ItemStack(Items.SUGAR, 1, 0), new ItemStack(Items.GLASS_BOTTLE, 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input1)), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input2)), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input3)) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodJelly)), new Object[]{
+			Items.SUGAR, Items.GLASS_BOTTLE, PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(input3)
+		}));
 	}
 	
 	private void initLicorice() {
@@ -450,14 +476,21 @@ public class PMPRecipes
 	}
 	
 	private void createLicoriceRecipe(PMPFood output, int dyeMeta) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 4, 0), new Object[] { new ItemStack(Items.SUGAR, 1, 0), new ItemStack(Items.SUGAR, 1, 0), new ItemStack(Items.DYE, 1, dyeMeta), new ItemStack(PlantMegaPack.items
-		
-			.getFoodItem(PMPFood.foodLicoriceRoot), 1, 0) }));
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(output), 4);
+		GameRegistry.addShapelessRecipe(iOut, new Object[]{
+			Items.SUGAR, Items.SUGAR,
+			new ItemStack(Items.DYE, 1, dyeMeta),
+			PlantMegaPack.items.getFoodItem(PMPFood.foodLicoriceRoot)
+		});
 	}
 	
 	private void initPeanutButter() {
 		Item peanuts = PlantMegaPack.items.getFoodItem(PMPFood.foodPeanuts);
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodPeanutButter), 1, 0), new Object[] { new ItemStack(Items.SUGAR, 1, 0), new ItemStack(Items.GLASS_BOTTLE, 1, 0), new ItemStack(peanuts), new ItemStack(peanuts), new ItemStack(peanuts) }));
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodPeanutButter));
+		GameRegistry.addShapelessRecipe(iOut, new Object[]{
+			Items.SUGAR, Items.GLASS_BOTTLE,
+			peanuts, peanuts, peanuts
+		});
 	}
 	
 	private void initPlanters() {
@@ -547,24 +580,27 @@ public class PMPRecipes
 	}
 	
 	private void createColumnPlanterRecipe(Block input, int inputMeta, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { "xyx", "xzx", " x ", 
-			Character.valueOf('x'), new ItemStack(input, 1, inputMeta), 
-			Character.valueOf('y'), new ItemStack(Items.DYE, 1, 15), 
-			Character.valueOf('z'), Blocks.DIRT }));
+		GameRegistry.addShapedRecipe(new ItemStack(output), new Object[]{ "xyx", "xzx", " x ", 
+			'x', new ItemStack(input, 1, inputMeta), 
+			'y', new ItemStack(Items.DYE, 1, 15), 
+			'z', Blocks.DIRT
+		});
 	}
 	
 	private void createMetalPlanterRecipe(Item input, int inputMeta, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { "xyx", "xxx", "xzx", 
-			Character.valueOf('x'), new ItemStack(input, 1, inputMeta), 
-			Character.valueOf('y'), new ItemStack(Items.DYE, 1, 15), 
-			Character.valueOf('z'), Blocks.DIRT }));
+		GameRegistry.addShapedRecipe(new ItemStack(output), new Object[]{ "xyx", "xxx", "xzx", 
+			'x', new ItemStack(input, 1, inputMeta), 
+			'y', new ItemStack(Items.DYE, 1, 15), 
+			'z', Blocks.DIRT
+		});
 	}
 	
 	private void createSquarePlanterRecipe(Block input, int inputMeta, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { "xyx", "xzx", "xxx", 
-			Character.valueOf('x'), new ItemStack(input, 1, inputMeta), 
-			Character.valueOf('y'), new ItemStack(Items.DYE, 1, 15), 
-			Character.valueOf('z'), Blocks.DIRT }));
+		GameRegistry.addShapedRecipe(new ItemStack(output), new Object[]{ "xyx", "xzx", "xxx", 
+			'x', new ItemStack(input, 1, inputMeta), 
+			'y', new ItemStack(Items.DYE, 1, 15), 
+			'z', Blocks.DIRT
+		});
 	}
 	
 	private void initPowders() {
@@ -576,25 +612,24 @@ public class PMPRecipes
 	
 	private void createPowderRecipe(Item input, PMPPowder output) {
 		int dyeMeta = output == PMPPowder.powderDefoliant ? 0 : 15;
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getPowderItem(output), 1, 0), new Object[] { "xyx", "wzw", "www", 
-			Character.valueOf('w'), new ItemStack(input, 1, 0), 
-			Character.valueOf('x'), new ItemStack(Items.DYE, 1, dyeMeta), 
-			Character.valueOf('y'), new ItemStack(Items.STRING, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.LEATHER, 1, 0) }));
+		GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.items.getPowderItem(output)), new Object[]{ "xyx", "wzw", "www", 
+			'w', input, 
+			'x', new ItemStack(Items.DYE, 1, dyeMeta), 
+			'y', Items.STRING, 
+			'z', Items.LEATHER
+		});
 	}
 	
 	private void initRice() {
 		Item rice1 = PlantMegaPack.items.getFoodItem(PMPFood.foodRice);
 		Item rice2 = PlantMegaPack.items.getFoodItem(PMPFood.foodWildRice);
 		Item output = PlantMegaPack.items.getFoodItem(PMPFood.foodCookedRice);
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(rice1, 1, 0), new ItemStack(rice1, 1, 0), new ItemStack(rice1, 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(rice1, 1, 0), new ItemStack(rice1, 1, 0), new ItemStack(rice2, 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(rice1, 1, 0), new ItemStack(rice2, 1, 0), new ItemStack(rice2, 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[] { new ItemStack(rice2, 1, 0), new ItemStack(rice2, 1, 0), new ItemStack(rice2, 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.PAPER, 3, 0), new Object[] { "xxx", "xxx", "xxx", 
-			Character.valueOf('x'), new ItemStack(rice1, 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.PAPER, 3, 0), new Object[] { "xxx", "xxx", "xxx", 
-			Character.valueOf('x'), new ItemStack(rice2, 1, 0) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] {rice1, rice1, rice1 });
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] {rice1, rice1, rice2 });
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] {rice1, rice2, rice2 });
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] {rice2, rice2, rice2 });
+		GameRegistry.addShapedRecipe(new ItemStack(Items.PAPER, 3), new Object[] { "xxx", "xxx", "xxx", 'x', rice1 });
+		GameRegistry.addShapedRecipe(new ItemStack(Items.PAPER, 3), new Object[] { "xxx", "xxx", "xxx", 'x', rice2 });
 	}
 	
 	private void initSalves() {
@@ -622,11 +657,12 @@ public class PMPRecipes
 	}
 	
 	private void createSalveRecipe(Item item1, int meta1, Item item2, int meta2, PMPSalve salve) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getSalveItem(salve), 1, 0), new Object[] { "   ", "wyx", " z ", 
-			Character.valueOf('w'), new ItemStack(item1, 1, meta1), 
-			Character.valueOf('x'), new ItemStack(item2, 1, meta2), 
-			Character.valueOf('y'), new ItemStack(Items.SUGAR, 1, 0), 
-			Character.valueOf('z'), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 1, 0) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getSalveItem(salve)), new Object[]{ "wyx", " z ", 
+			'w', new ItemStack(item1, 1, meta1), 
+			'x', new ItemStack(item2, 1, meta2), 
+			'y', Items.SUGAR, 
+			'z', PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed)
+		}));
 	}
 	
 	private void initSandwiches() {
@@ -654,15 +690,15 @@ public class PMPRecipes
 	}
 	
 	private void createSandwichRecipe(PMPFood input1, PMPFood input2, Item meat, Item bread, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 4, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(input1), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input2), 1, 0), new ItemStack(meat, 1, 0), new ItemStack(bread, 1, 0) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 4), new Object[]{
+				PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), meat, bread
+		});
 	}
 	
 	private void createPBJSandwichRecipe(Item bread) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichPBJ), 4, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(PMPFood.foodPeanutButter), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(PMPFood.foodJelly), 1, 0), new ItemStack(bread, 1, 0) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichPBJ), 4), new Object[]{
+			PlantMegaPack.items.getFoodItem(PMPFood.foodPeanutButter), PlantMegaPack.items.getFoodItem(PMPFood.foodJelly), bread
+		});
 	}
 	
 	private void initSaplings() {
@@ -674,32 +710,9 @@ public class PMPRecipes
 	}
 	
 	private void createSaplingRecipe(PMPSapling sapling) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.blocks.getSapling(sapling), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(sapling.food), 1, 0), new ItemStack(Items.DYE, 1, 15), new ItemStack(Items.DYE, 1, 15) }));
-	}
-	
-	private void initStirFry() {
-		for (PMPFood veg1 : PMPFood.values()) {
-			if (veg1.foodType == PMPFoodType.vege) {
-				for (PMPFood veg2 : PMPFood.values()) {
-					if (veg2.foodType == PMPFoodType.vege) {
-						createStirFryRecipe(veg1, veg2, Items.COOKED_BEEF);
-						createStirFryRecipe(veg1, veg2, Items.COOKED_CHICKEN);
-						createStirFryRecipe(veg1, veg2, Items.COOKED_FISH);
-						createStirFryRecipe(veg1, veg2, Items.COOKED_MUTTON);
-						createStirFryRecipe(veg1, veg2, Items.COOKED_PORKCHOP);
-						createStirFryRecipe(veg1, veg2, Items.COOKED_RABBIT);
-					}
-				}
-			}
-		}
-	}
-	
-	private void createStirFryRecipe(PMPFood input1, PMPFood input2, Item meat) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodStirFry), 1, 0), new Object[] { new ItemStack(meat, 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(PMPFood.foodCookedRice)), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input1)), new ItemStack(PlantMegaPack.items
-			.getFoodItem(input2)), new ItemStack(Items.BOWL, 1, 0) }));
+		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.blocks.getSapling(sapling)), new Object[]{
+			PlantMegaPack.items.getFoodItem(sapling.food), new ItemStack(Items.DYE, 1, 15), new ItemStack(Items.DYE, 1, 15)
+		});
 	}
 	
 	private void initStuffedPeppers() {
@@ -720,20 +733,22 @@ public class PMPRecipes
 	}
 	
 	private void createStuffedPepperRecipe(PMPFood pepperIn, Item ingredient, PMPFood pepperOut) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(pepperOut), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(pepperIn), 1, 0), new ItemStack(ingredient, 1, 0) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(pepperOut)), new Object[]{
+			PlantMegaPack.items.getFoodItem(pepperIn), ingredient
+		}));
 	}
 	
 	private void initTeaDrinks() {
-		createTeaRecipe(PMPFood.foodAcaiberry, PMPFood.foodAcaiberryTea);
-		createTeaRecipe(PMPFood.foodHops, PMPFood.foodHopTea);
+		createTeaRecipe("cropAcaiberry", PMPFood.foodAcaiberryTea);
+		createTeaRecipe("cropHops", PMPFood.foodHopTea);
 	}
 	
-	private void createTeaRecipe(PMPFood input, PMPFood output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 1, 0), new Object[] { "   ", "xyx", " z ", 
-			Character.valueOf('x'), new ItemStack(PlantMegaPack.items.getFoodItem(input), 1, 0), 
-			Character.valueOf('y'), new ItemStack(Items.WATER_BUCKET, 1, 0), 
-			Character.valueOf('z'), new ItemStack(Items.GLASS_BOTTLE, 1, 0) }));
+	private void createTeaRecipe(String input, PMPFood output) {
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output)), new Object[]{ "xyx", " z ", 
+			'x', input,
+			'y', Items.WATER_BUCKET, 
+			'z', Items.GLASS_BOTTLE
+		}));
 	}
 	
 	private void initTortillas() {
@@ -755,10 +770,9 @@ public class PMPRecipes
 	}
 	
 	private void createTortillaRecipe(PMPFood tortillaIn, Item meat, PMPFood veg1, PMPFood veg2, PMPFood tortillaOut) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(tortillaOut), 1, 0), new Object[] { new ItemStack(PlantMegaPack.items
-			.getFoodItem(tortillaIn), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(veg1), 1, 0), new ItemStack(PlantMegaPack.items
-			.getFoodItem(veg2), 1, 0), new ItemStack(meat, 1, 0) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(tortillaOut)), new Object[] {
+			PlantMegaPack.items.getFoodItem(tortillaIn), PlantMegaPack.items.getFoodItem(veg1), PlantMegaPack.items.getFoodItem(veg2), meat
+		}));
 	}
 	
 	private void initTrellis() {
@@ -782,23 +796,25 @@ public class PMPRecipes
 	}
 	
 	private void createBambooTrellisRecipe(Block input1, Block input2, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 6, 0), new Object[] { "xyx", "xyx", "xyx",
-			Character.valueOf('x'), new ItemStack(input1, 1, 0), 
-			Character.valueOf('y'), new ItemStack(input2, 1, 0) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(output, 6), new Object[]{ "xyx", "xyx", "xyx",
+			'x', input1, 
+			'y', input2
+		}));
 	}
 	
 	private void createWoodTrellisRecipe(Block input, int blockMeta, Block output) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(output, 6, 0), new Object[] { "xyx", "xyx", "xyx", 
-			Character.valueOf('x'), new ItemStack(input, 1, blockMeta), 
-			Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(output, 6), new Object[]{ "xyx", "xyx", "xyx", 
+			'x', new ItemStack(input, 1, blockMeta), 
+			'y', Items.STICK
+		}));
 	}
 	
 	private void initUniquePlantRecipes() {
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.STICK, 1, 0), new Object[] { new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("groundcoverTwig"), 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getPlantItem(PMPPlantItem.cattailSpike), 2, 0), new Object[] { new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("wetlandsCattails"), 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Blocks.TORCH, 1, 0), new Object[] { new ItemStack(Items.STICK, 1, 0), new ItemStack(PlantMegaPack.items.getPlantItem(PMPPlantItem.cattailSpike), 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.STRING, 1, 0), new Object[] { new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("vineSpanishMoss"), 1, 0) }));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.GUNPOWDER, 1, 0), new Object[] { new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), 1, 0), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), 1, 0), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), 1, 0), new ItemStack(PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), 1, 0) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.STICK), new Object[] { PlantMegaPack.blocks.getPlantBlockByName("groundcoverTwig") }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getPlantItem(PMPPlantItem.cattailSpike), 2), new Object[] { PlantMegaPack.blocks.getPlantBlockByName("wetlandsCattails") }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.TORCH), new Object[] { Items.STICK, PlantMegaPack.items.getPlantItem(PMPPlantItem.cattailSpike) }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.STRING), new Object[] { PlantMegaPack.blocks.getPlantBlockByName("vineSpanishMoss") }));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.GUNPOWDER), new Object[] { PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss"), PlantMegaPack.blocks.getPlantBlockByName("forestWolfsFootClubmoss") }));
 	}
 	
 	private void initWallBrackets() {
@@ -842,94 +858,91 @@ public class PMPRecipes
 	}
 	
 	private void createWallBracketRecipe(Block input, int inputMeta, PMPWallBracket bracket) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWallBracket(bracket.name()), 3, 0), new Object[] { "xx ", " x ", "   ", 
-			Character.valueOf('x'), new ItemStack(input, 1, inputMeta) }));
+		GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWallBracket(bracket.name()), 3), new Object[]{ "xx", " x",
+			'x', new ItemStack(input, 1, inputMeta)
+		});
 	}
 	
 	private void createWallBracketRecipe(Item input, int inputMeta, PMPWallBracket bracket) {
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWallBracket(bracket.name()), 1, 0), new Object[] { "xx ", " x ", "   ", 
-			Character.valueOf('x'), new ItemStack(input, 1, inputMeta) }));
+		GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWallBracket(bracket.name())), new Object[]{ "xx", " x",
+			'x', new ItemStack(input, 1, inputMeta)
+		});
 	}
 	
 	private void initWoodBlocks() {
 		for (PMPWood wood : PMPWood.values()) {
-			CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 4, 0), new Object[] { new ItemStack(PlantMegaPack.blocks
-				.getWoodBlock(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodSlab(wood.name()), 6, 0), new Object[] { "   ", "xxx", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodStairs(wood.name()), 4, 0), new Object[] { "  x", " xx", "xxx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodDoor(wood.name()), 3, 0), new Object[] { "xx ", "xx ", "xx ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodFence(wood.name()), 3, 0), new Object[] { "   ", "xyx", "xyx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodGate(wood.name()), 1, 0), new Object[] { "   ", "xyx", "xyx", 
-				Character.valueOf('x'), new ItemStack(Items.STICK, 1, 0), 
-				Character.valueOf('y'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(PlantMegaPack.blocks.getWoodLadder(wood.name()), 4, 0), new Object[] { "x x", "xyx", "x x",
-				Character.valueOf('x'), new ItemStack(Items.STICK, 1, 0), 
-				Character.valueOf('y'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.CRAFTING_TABLE, 1, 0), new Object[] { "xx ", "xx ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.CRAFTING_TABLE, 1, 0), new Object[] { " xx", " xx", "   ",
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.CRAFTING_TABLE, 1, 0), new Object[] { "   ", "xx ", "xx ",
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.CRAFTING_TABLE, 1, 0), new Object[] { "   ", " xx", " xx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.CHEST, 1, 0), new Object[] { "xxx", "x x", "xxx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.BOAT, 1, 0), new Object[] { "   ", "x x", "xxx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.BOWL, 4, 0), new Object[] { "   ", "x x", " x ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_BUTTON, 1, 0), new Object[] { "   ", " x ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.SIGN, 3, 0), new Object[] { "xxx", "xxx", " y ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { "x  ", "x  ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			/*CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { " x ", " x ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { "  x", "  x", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { "   ", "x  ", "x  ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { "   ", " x ", " x ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.STICK, 4, 0), new Object[] { "   ", "  x", "  x", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));*/
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.WOODEN_AXE, 1, 0), new Object[] { "xx ", "xy ", " y ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.WOODEN_HOE, 1, 0), new Object[] { "xx ", " y ", " y ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.WOODEN_PICKAXE, 1, 0), new Object[] { "xxx", " y ", " y ",
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.WOODEN_SHOVEL, 1, 0), new Object[] { " x ", " y ", " y ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.WOODEN_SWORD, 1, 0), new Object[] { " x ", " x ", " y ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0), 
-				Character.valueOf('y'), new ItemStack(Items.STICK, 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { "xx ", "   ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			/*CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { " xx", "   ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { "   ", "xx ", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { "   ", " xx", "   ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { "   ", "   ", "xx ", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE, 1, 0), new Object[] { "   ", "   ", " xx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));*/
-			CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Blocks.TRAPDOOR, 2, 0), new Object[] { "   ", "xxx", "xxx", 
-				Character.valueOf('x'), new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 1, 0) }));
+			GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.blocks.getWoodPlanks(wood.name()), 4), new Object[]{
+				PlantMegaPack.blocks.getWoodBlock(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodSlab(wood.name()), 6), new Object[]{ "xxx",
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodStairs(wood.name()), 4), new Object[]{ "  x", " xx", "xxx", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodDoor(wood.name()), 3), new Object[]{ "xx ", "xx ", "xx ", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodFence(wood.name()), 3), new Object[]{ "xyx", "xyx", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodGate(wood.name())), new Object[]{ "xyx", "xyx", 
+				'x', Items.STICK,
+				'y', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(PlantMegaPack.blocks.getWoodLadder(wood.name()), 4), new Object[]{ "x x", "xyx", "x x",
+				'x', Items.STICK, 
+				'y', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Blocks.CRAFTING_TABLE), new Object[]{ "xx", "xx",
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Blocks.CHEST), new Object[]{ "xxx", "x x", "xxx", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.BOAT), new Object[]{ "x x", "xxx", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.BOWL, 4), new Object[]{ "x x", " x ", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Blocks.WOODEN_BUTTON), new Object[]{ "x",
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.SIGN, 3), new Object[]{ "xxx", "xxx", " y ", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.STICK, 4), new Object[] { "x", "x",
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.WOODEN_AXE), new Object[] { "xx", "xy", " y", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK,
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.WOODEN_HOE), new Object[] { "xx", " y", " y", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.WOODEN_PICKAXE), new Object[] { "xxx", " y ", " y ",
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.WOODEN_SHOVEL), new Object[] { "x", "y", "y", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Items.WOODEN_SWORD), new Object[] { "x", "x", "y", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name()), 
+				'y', Items.STICK,
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Blocks.WOODEN_PRESSURE_PLATE), new Object[] { "xx ", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
+			GameRegistry.addShapedRecipe(new ItemStack(Blocks.TRAPDOOR, 2), new Object[] { "xxx", "xxx", 
+				'x', PlantMegaPack.blocks.getWoodPlanks(wood.name())
+			});
 		}
 	}
 }

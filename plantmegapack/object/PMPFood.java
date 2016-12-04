@@ -19,7 +19,7 @@ public enum PMPFood {
 	foodAppleGreen(new String[]{"cropAppleGreen"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.pies, PMPFoodUse.tree)),
 	foodAppleYellow(new String[]{"cropAppleYellow"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.pies, PMPFoodUse.tree)),
 	foodApricot(new String[]{"cropApricot"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.tree)),
-	foodAvocado(new String[]{"cropAvocado"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.desb, PMPFoodUse.frdr, PMPFoodUse.tree)),
+	cropAvocado(new String[]{"cropAvocado"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.desb, PMPFoodUse.frdr, PMPFoodUse.tree)),
 	foodBanana(new String[]{"cropBanana"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.pies, PMPFoodUse.tree)),
 	foodCherry(new String[]{"cropCherry"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.pies, PMPFoodUse.tree)),
 	foodCoconut(new String[]{"cropCoconut"}, PMPFoodType.frui, 2, 0.4F, -1, EnumSet.of(PMPFoodUse.dess, PMPFoodUse.frdr, PMPFoodUse.pies, PMPFoodUse.tree)),
@@ -161,8 +161,7 @@ public enum PMPFood {
 	foodWrapSeaweed(new String[]{"foodWrapSeaweed"}, PMPFoodType.food, 1, 0.3F, -1, EnumSet.noneOf(PMPFoodUse.class)),
 	foodWrapSeaweedFish(new String[]{"foodWrapSeaweedFish"}, PMPFoodType.food, 10, 1.0F, -1, EnumSet.noneOf(PMPFoodUse.class)),
 	foodWrapSeaweedMeat(new String[]{"foodWrapSeaweedMeat"}, PMPFoodType.food, 10, 1.0F, -1, EnumSet.noneOf(PMPFoodUse.class)),
-	foodWrapSeaweedRice(new String[]{"foodWrapSeaweedRice"}, PMPFoodType.food, 9, 1.0F, -1, EnumSet.noneOf(PMPFoodUse.class)),
-	foodStirFry(new String[]{"foodStirFry"}, PMPFoodType.bowl, 10, 1.0F, -1, EnumSet.noneOf(PMPFoodUse.class));
+	foodWrapSeaweedRice(new String[]{"foodWrapSeaweedRice"}, PMPFoodType.food, 9, 1.0F, -1, EnumSet.noneOf(PMPFoodUse.class));
 	
 	public final String[] oreDictNames;
 	public final PMPFoodType foodType;
