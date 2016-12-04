@@ -11,7 +11,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPHelper;
 import plantmegapack.core.PMPItems;
 import plantmegapack.object.PMPRootMedicinal;
@@ -23,7 +22,7 @@ public class PMPItemRootMedicinal
 {
 	public PMPItemRootMedicinal(String name) {
 		setUnlocalizedName(name);
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setMaxDamage(0);
 		setHasSubtypes(true);
 		GameRegistry.registerItem(this, name);
@@ -36,12 +35,5 @@ public class PMPItemRootMedicinal
 		for (PMPRootMedicinal root : PMPRootMedicinal.values()) {
 			subItems.add(new ItemStack(itemIn, 1, root.ID));
 		}
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
-		PMPRootMedicinal root = PMPRootMedicinal.getRootFromID(itemStack.getMetadata());
-		list.add(/*"§7" +*/ I18n.translateToLocal("gui.effect") + ": " + root.getLocalizedNameFormatted() /*+ "§r"*/);
-		PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getSalveItem(PMPSalve.getSalveFromID(itemStack.getMetadata())));
 	}
 }

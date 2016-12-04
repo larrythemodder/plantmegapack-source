@@ -24,7 +24,6 @@ import plantmegapack.PlantMegaPack;
 import plantmegapack.block.PMPBlockCrop;
 import plantmegapack.block.PMPBlockTreeFruit;
 import plantmegapack.core.PMPBlocks;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPHelper;
 import plantmegapack.core.PMPItems;
 import plantmegapack.object.PMPFood;
@@ -45,7 +44,7 @@ public class PMPItemFood extends ItemFood {
 			setContainerItem(Items.GLASS_BOTTLE);
 		}
 		setUnlocalizedName(this.food.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerItem(this, this.food.name());
 		
 		for (int i = 0; i < this.food.oreDictNames.length; i++) {
@@ -134,95 +133,5 @@ public class PMPItemFood extends ItemFood {
 			return true;
 		}
 		return false;
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
-		if ((this.food.foodType == PMPFoodType.berr) || (this.food.foodType == PMPFoodType.flav) || (this.food.foodType == PMPFoodType.frui) || (this.food.foodType == PMPFoodType.seed) || (this.food.foodType == PMPFoodType.vege)) {
-			list.add(/*"§6" +*/ I18n.translateToLocal(new StringBuilder().append("foodType.").append(this.food.foodType.name()).toString()) /*+ "§r"*/);
-		}
-		if (this.food.isTreeFruit()) {
-			list.add(/*"§7" +*/ I18n.translateToLocal("gui.treeFruitTooltip") /*+ "§r"*/);
-		}
-		if (this.food.canCraftCereal()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.cereal");
-		}
-		if ((this.food == PMPFood.foodRice) || (this.food == PMPFood.foodWildRice)) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodCookedRice));
-		}
-		if (this.food == PMPFood.foodCornFlour) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread));
-		}
-		if (this.food == PMPFood.foodCorn) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour));
-		}
-		if (this.food == PMPFood.foodCornTortilla) {
-			PMPHelper.addCraftingItemTooltip(list, "item.foodCornTortillaFish.name");
-			PMPHelper.addCraftingItemTooltip(list, "item.foodCornTortillaMeat.name");
-			PMPHelper.addCraftingItemTooltip(list, "item.foodCornTortillaRice.name");
-		}
-		if (this.food.canCraftDessert()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.dessert");
-		}
-		if (this.food.canCraftDessertBowl()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.dessertBowl");
-		}
-		if ((this.food.foodType == PMPFoodType.vege) || (this.food == PMPFood.foodWrapCorn) || (this.food == PMPFood.foodWrapSeaweed)) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.foodWrap");
-		}
-		if ((this.food.foodType == PMPFoodType.berr) || (this.food.foodType == PMPFoodType.frui)) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodFruitBowl));
-		}
-		if (this.food.canCraftFruitDrink()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.fruitDrink");
-		}
-		if (this.food.foodType == PMPFoodType.berr) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodJelly));
-		}
-		if (this.food == PMPFood.foodWrapSeaweed) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.medicinalSalve");
-		}
-		if (this.food.salveID >= 0) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getSalveItem(PMPSalve.getSalveFromID(this.food.salveID)));
-		}
-		if (this.food == PMPFood.foodLicoriceRoot) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.licorice");
-		}
-		if ((this.food.canCraftMuffin()) || (this.food == PMPFood.foodCornBread)) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.muffin");
-		}
-		if ((this.food == PMPFood.foodRice) || (this.food == PMPFood.foodWildRice)) {
-			PMPHelper.addCraftingItemTooltip(list, Items.PAPER);
-		}
-		if (this.food == PMPFood.foodPeanuts) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodPeanutButter));
-		}
-		if (this.food == PMPFood.foodPeanutButter) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodCookiePeanutButter));
-		}
-		if (this.food.canCraftPie()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.pie");
-		}
-		if ((this.food.foodType == PMPFoodType.vege) || (this.food == PMPFood.foodCornBread) || (this.food == PMPFood.foodJelly) || (this.food == PMPFood.foodPeanutButter)) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.sandwich");
-		}
-		if (this.food.canCraftSoup()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.soup");
-		}
-		if ((this.food.foodType == PMPFoodType.vege) || (this.food == PMPFood.foodCookedRice)) {
-			PMPHelper.addCraftingItemTooltip(list, PlantMegaPack.items.getFoodItem(PMPFood.foodStirFry));
-		}
-		if ((this.food == PMPFood.foodBellPepperOrange) || (this.food == PMPFood.foodBellPepperRed) || (this.food == PMPFood.foodBellPepperYellow) || (this.food == PMPFood.foodCookedRice)) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.stuffedPepper");
-		}
-		if (this.food.canCraftTea()) {
-			PMPHelper.addCraftingItemTooltip(list, "gui.tea");
-		}
-		if ((this.food.foodType == PMPFoodType.vege) || (this.food == PMPFood.foodCookedRice)) {
-			PMPHelper.addCraftingItemTooltip(list, "item.foodTortilla.name");
-		}
-		if (this.food == PMPFood.foodCornFlour) {
-			PMPHelper.addSmeltingItemTooltip(list, "item.foodCornTortilla.name");
-		}
 	}
 }

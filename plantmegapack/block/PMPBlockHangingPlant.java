@@ -31,7 +31,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
 import plantmegapack.core.PMPBlockCore;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPSettings;
 import plantmegapack.object.PMPHangingPlant;
 import plantmegapack.object.PMPTab;
@@ -47,7 +46,7 @@ public class PMPBlockHangingPlant
 		super(Material.PLANTS);
 		this.hangingPlant = hangingPlant;
 		setDefaultState(this.blockState.getBaseState().withProperty(SEGMENT, Segment.top));
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setUnlocalizedName(this.hangingPlant.name());
 		setSoundType(SoundType.PLANT);
 		GameRegistry.registerBlock(this, this.hangingPlant.name());

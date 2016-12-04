@@ -22,7 +22,7 @@ public abstract class PMPBlockCore
 		if ((block != null) && (plantData != null) && (itemClass != null)) {
 			block.setTickRandomly(plantData.attributes.category.tickRandomly);
 			block.setUnlocalizedName(plantData.attributes.name());
-			block.setCreativeTab(PlantMegaPack.creativeTabs.getTab(plantData.attributes.category.creativeTab));
+			block.setCreativeTab(plantData.attributes.category.creativeTab);
 			block.setHardness(plantData.attributes.hardness);
 			GameRegistry.registerBlock(block, itemClass, plantData.attributes.name());
 			OreDictionary.registerOre(plantData.attributes.oreDictName, block);

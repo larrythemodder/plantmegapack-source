@@ -15,7 +15,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
 import plantmegapack.book.PMPBookRegistry;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPSettings;
 import plantmegapack.object.PMPTab;
 
@@ -25,7 +24,7 @@ public class PMPItemBook
 	public PMPItemBook(String name) {
 		setMaxStackSize(1);
 		setUnlocalizedName(name);
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		//setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
 		GameRegistry.registerItem(this, name);
 		OreDictionary.registerOre(name, this);
 	}

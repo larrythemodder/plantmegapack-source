@@ -9,7 +9,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPHelper;
 import plantmegapack.object.PMPFlower;
 import plantmegapack.object.PMPTab;
@@ -22,13 +21,8 @@ public class PMPItemFlower
 	public PMPItemFlower(PMPFlower flower) {
 		this.flower = flower;
 		setUnlocalizedName(this.flower.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerItem(this, this.flower.name());
 		OreDictionary.registerOre(this.flower.oreDictName, this);
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
-		PMPHelper.addCraftingDyeTooltip(list, this.flower.ID);
 	}
 }

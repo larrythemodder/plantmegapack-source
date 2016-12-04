@@ -17,7 +17,6 @@ import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.data.PMPDataTree;
 import plantmegapack.item.PMPItemSapling;
 import plantmegapack.object.PMPSapling;
@@ -37,7 +36,7 @@ public class PMPBlockSapling
 		this.tree = tree;
 		setUnlocalizedName(this.treeData.sapling.name());
 		setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabTree);
 		setSoundType(SoundType.PLANT);
 		GameRegistry.registerBlock(this, PMPItemSapling.class, this.treeData.sapling.name());
 		OreDictionary.registerOre(this.treeData.sapling.oreDictName, this);

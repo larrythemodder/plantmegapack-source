@@ -18,7 +18,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.object.PMPPlanter;
 import plantmegapack.object.PMPPlanterType;
 import plantmegapack.object.PMPTab;
@@ -37,7 +36,7 @@ public class PMPBlockPlanter
 		this.planter = planter;
 		setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false)).withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false)).withProperty(WEST, Boolean.valueOf(false)));
 		setUnlocalizedName(this.planter.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setTickRandomly(false);
 		if (this.planter.planterType.material == Material.IRON) {
 			setHardness(1.75F);

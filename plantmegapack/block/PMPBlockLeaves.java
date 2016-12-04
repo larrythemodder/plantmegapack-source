@@ -30,7 +30,6 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
 import plantmegapack.core.PMPBlocks;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPItems;
 import plantmegapack.item.PMPItemLeaves;
 import plantmegapack.object.PMPLeaves;
@@ -47,7 +46,7 @@ public class PMPBlockLeaves
 		this.leaves = leaves;
 		setUnlocalizedName(this.leaves.name());
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, Integer.valueOf(0)).withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(true)).withProperty(BlockLeaves.DECAYABLE, Boolean.valueOf(true)));
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerBlock(this, PMPItemLeaves.class, this.leaves.name());
 		OreDictionary.registerOre(this.leaves.oreDictName, this);
 		OreDictionary.registerOre("leavesTree", this);

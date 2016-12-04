@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.item.PMPItemWoodDoor;
 import plantmegapack.object.PMPBamboo;
 import plantmegapack.object.PMPTab;
@@ -37,7 +36,7 @@ public class PMPBlockWoodDoor
 		setHardness(1.2F);
 		setSoundType(SoundType.WOOD);
 		setUnlocalizedName(blockName + suffix);
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerBlock(this, PMPItemWoodDoor.class, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
 	}

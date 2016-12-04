@@ -16,7 +16,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.object.PMPBamboo;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPWood;
@@ -40,7 +39,7 @@ public class PMPBlockWoodLog extends BlockLog {
 		setHardness(1.2F);
 		setSoundType(SoundType.WOOD);
 		setUnlocalizedName(blockName + "Block");
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerBlock(this, blockName + "Block");
 		OreDictionary.registerOre(oreDictName + "Log", this);
 		OreDictionary.registerOre("logWood", this);

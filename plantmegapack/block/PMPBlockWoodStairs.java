@@ -7,7 +7,6 @@ import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.object.PMPBamboo;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPWood;
@@ -31,7 +30,7 @@ public class PMPBlockWoodStairs
 		setUnlocalizedName(blockName + suffix);
 		setHardness(1.2F);
 		this.useNeighborBrightness = true;
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);
 		OreDictionary.registerOre("stairWood", this);

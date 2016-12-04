@@ -10,7 +10,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.object.PMPBamboo;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPWood;
@@ -33,7 +32,7 @@ public class PMPBlockWoodFence
 	private void init(String blockName, String oreDictName) {
 		String suffix = "Fence";
 		setUnlocalizedName(blockName + suffix);
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setHardness(1.2F);
 		GameRegistry.registerBlock(this, blockName + suffix);
 		OreDictionary.registerOre(oreDictName + suffix, this);

@@ -21,7 +21,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import plantmegapack.PlantMegaPack;
 import plantmegapack.core.PMPBlocks;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.object.PMPBamboo;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPWood;
@@ -55,7 +54,7 @@ public abstract class PMPBlockWoodSlab
 		OreDictionary.registerOre("slabWood", this);
 		setDefaultState(getDefaultState().withProperty(VARIANT, Boolean.valueOf(false)).withProperty(BlockSlab.HALF, isDouble() ? BlockSlab.EnumBlockHalf.TOP : BlockSlab.EnumBlockHalf.BOTTOM));
 		if (!isDouble()) {
-			setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+			setCreativeTab(PlantMegaPack.tabItem);
 		}
 	}
 	

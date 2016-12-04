@@ -46,4 +46,8 @@ public class PMPBlockFloating
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
 		return this.plantData.attributes.renderType == PMPPlantRender.ffla ? AABB_FLAT : super.getBoundingBox(state, worldIn, pos);
 	}
+	
+	public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
+		return this.plantData.attributes.renderType == PMPPlantRender.ffla ? AABB_FLAT : super.getBoundingBox(state, worldIn, pos);
+	}
 }

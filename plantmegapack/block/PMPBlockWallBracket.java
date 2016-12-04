@@ -17,7 +17,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.item.PMPItemWallBracket;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPWallBracket;
@@ -43,7 +42,7 @@ public class PMPBlockWallBracket
 		setHardness(0.2F);
 		setSoundType(this.bracket.type.sound);
 		setUnlocalizedName(this.bracket.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerBlock(this, PMPItemWallBracket.class, this.bracket.name());
 		OreDictionary.registerOre(this.bracket.oreDictName, this);
 	}

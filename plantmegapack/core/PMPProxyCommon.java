@@ -15,7 +15,7 @@ public class PMPProxyCommon
 {
 	public void preInit() {
 		PlantMegaPack.settings = new PMPSettings(PlantMegaPack.configPathRoot);
-		PlantMegaPack.creativeTabs = new PMPCreativeTab();
+		//PlantMegaPack.creativeTabs = new PMPCreativeTab();
 		PlantMegaPack.blocks = new PMPBlocks();
 		PlantMegaPack.items = new PMPItems();
 		PlantMegaPack.plantDrops = new PMPPlantCropDrops();

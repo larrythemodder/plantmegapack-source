@@ -18,7 +18,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPSettings;
 import plantmegapack.object.PMPPowder;
 import plantmegapack.object.PMPTab;
@@ -32,7 +31,7 @@ public class PMPItemPowder
 	public PMPItemPowder(PMPPowder powder) {
 		this.powder = powder;
 		setUnlocalizedName(this.powder.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setMaxStackSize(1);
 		setMaximumUses();
 		GameRegistry.registerItem(this, this.powder.name());
@@ -68,24 +67,5 @@ public class PMPItemPowder
 			return EnumActionResult.SUCCESS;
 		}
 		return EnumActionResult.FAIL;
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
-		int strength = 0;
-		int radius = 0;
-		if (this.powder == PMPPowder.powderConditioner) {
-			strength = PlantMegaPack.settings.powderConditionerStrength;
-			radius = PlantMegaPack.settings.powderConditionerRadius;
-		} else if (this.powder == PMPPowder.powderDefoliant) {
-			strength = PlantMegaPack.settings.powderDefoliantStrength;
-			radius = PlantMegaPack.settings.powderDefoliantRadius;
-		} else if (this.powder == PMPPowder.powderFertilizer) {
-			strength = PlantMegaPack.settings.powderFertilizerStrength;
-			radius = PlantMegaPack.settings.powderFertilizerRadius;
-		}
-		list.add(/*"§7" +*/ I18n.translateToLocal("gui.usesRemaining") + String.format(": "/*§a%d§r"*/, new Object[] { Integer.valueOf(itemStack.getMaxDamage() - itemStack.getItemDamage() + 1) }));
-		list.add(/*"§8" +*/ I18n.translateToLocal("gui.strength") + String.format(": "/*§9%d"*/, new Object[] { Integer.valueOf(strength) }) /*+ "%§r"*/);
-		list.add(/*"§8" +*/ I18n.translateToLocal("gui.radius") + String.format(": " /*§9%d§r"*/, new Object[] { Integer.valueOf(radius) }));
 	}
 }

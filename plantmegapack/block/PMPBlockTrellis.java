@@ -18,7 +18,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.item.PMPItemTrellis;
 import plantmegapack.object.PMPTab;
 import plantmegapack.object.PMPTrellis;
@@ -38,7 +37,7 @@ public class PMPBlockTrellis
 		this.trellis = trellis;
 		setDefaultState(this.blockState.getBaseState().withProperty(CONNECTED, Integer.valueOf(0)).withProperty(BlockDirectional.FACING, EnumFacing.NORTH));
 		setUnlocalizedName(this.trellis.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		setTickRandomly(false);
 		setSoundType(SoundType.WOOD);
 		setHardness(0.6F);

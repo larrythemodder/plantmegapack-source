@@ -13,6 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import plantmegapack.core.IPMPPlant;
 import plantmegapack.core.PMPBlockCore;
 import plantmegapack.data.PMPDataPlant;
+import plantmegapack.plant.PMPPlantRender;
 
 public class PMPBlockFloatingFlower
 	extends PMPBlockColored
@@ -42,6 +43,10 @@ public class PMPBlockFloatingFlower
 	}
 	
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+		return AABB_FLOWER;
+	}
+	
+	public AxisAlignedBB getSelectedBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
 		return AABB_FLOWER;
 	}
 }

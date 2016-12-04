@@ -16,7 +16,6 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
-import plantmegapack.core.PMPCreativeTab;
 import plantmegapack.core.PMPSettings;
 import plantmegapack.object.PMPSalve;
 import plantmegapack.object.PMPTab;
@@ -29,7 +28,7 @@ public class PMPItemSalve
 	public PMPItemSalve(PMPSalve salve) {
 		this.salve = salve;
 		setUnlocalizedName(this.salve.name());
-		setCreativeTab(PlantMegaPack.creativeTabs.getTab(PMPTab.item));
+		setCreativeTab(PlantMegaPack.tabItem);
 		GameRegistry.registerItem(this, this.salve.name());
 		OreDictionary.registerOre(this.salve.name(), this);
 	}
@@ -51,15 +50,6 @@ public class PMPItemSalve
 			itemStackIn.stackSize -= 1;
 		}
 		return new ActionResult(EnumActionResult.PASS, itemStackIn);
-	}
-	
-	@SideOnly(Side.CLIENT)
-	public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean flag) {
-		if (this.salve == PMPSalve.salveHealth) {
-			list.add(/*"§8" +*/ I18n.translateToLocal("gui.effect") + ": " /*§9"*/ + String.format("%d", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.healthHealed") /*+ "§r"*/);
-		} else {
-			list.add(/*"§8" +*/ I18n.translateToLocal("gui.effect") + ": " /*§9"*/ + I18n.translateToLocal("gui.duration") + String.format(" %d ", new Object[] { Integer.valueOf(getSalveSetting()) }) + I18n.translateToLocal("gui.seconds") /*+ "§r"*/);
-		}
 	}
 	
 	private int getSalveSetting() {
