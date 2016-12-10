@@ -326,24 +326,9 @@ public class PMPRecipes {
 	}
 	
 	private void initFruitBowls() {
-		for (PMPFood fruit1 : PMPFood.values()) {
-			if ((fruit1.foodType == PMPFoodType.berr) || (fruit1.foodType == PMPFoodType.frui)) {
-				for (PMPFood fruit2 : PMPFood.values()) {
-					if ((fruit2.foodType == PMPFoodType.berr) || (fruit2.foodType == PMPFoodType.frui)) {
-						for (PMPFood fruit3 : PMPFood.values()) {
-							if ((fruit3.foodType == PMPFoodType.berr) || (fruit3.foodType == PMPFoodType.frui)) {
-								createFruitBowlRecipe(fruit1, fruit2, fruit3, PlantMegaPack.items.getFoodItem(PMPFood.foodFruitBowl));
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	private void createFruitBowlRecipe(PMPFood input1, PMPFood input2, PMPFood input3, PMPItemFood output) {
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(output, 1, 0), new Object[]{
-			Items.BOWL, PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(input3)
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodFruitBowl));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOut, new Object[]{
+			Items.BOWL, "cropBerry", "cropBerry", "cropBerry"
 		}));
 	}
 	
@@ -443,26 +428,11 @@ public class PMPRecipes {
 		}));
 	}
 	
+	/**TO-DO: Specific fruit jellies and jams.**/
 	private void initJelly() {
-		for (PMPFood berry1 : PMPFood.values()) {
-			if (berry1.foodType == PMPFoodType.berr) {
-				for (PMPFood berry2 : PMPFood.values()) {
-					if (berry2.foodType == PMPFoodType.berr) {
-						for (PMPFood berry3 : PMPFood.values()) {
-							if (berry3.foodType == PMPFoodType.berr) {
-								createJellyRecipe(berry1, berry2, berry3);
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	/** TODO: SPECIFIC FRUIT JELLIES, NOT 7000 JELLY RECIPES**/
-	private void createJellyRecipe(PMPFood input1, PMPFood input2, PMPFood input3) {
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodJelly)), new Object[]{
-			Items.SUGAR, Items.GLASS_BOTTLE, PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(input3)
+		ItemStack iOut = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodJelly));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOut, new Object[]{
+			Items.SUGAR, Items.GLASS_BOTTLE, "cropBerry", "cropBerry", "cropBerry"
 		}));
 	}
 	

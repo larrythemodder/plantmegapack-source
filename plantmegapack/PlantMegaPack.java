@@ -22,14 +22,14 @@ import plantmegapack.core.PMPItems;
 import plantmegapack.core.PMPProxyCommon;
 import plantmegapack.core.PMPRecipes;
 import plantmegapack.core.PMPSettings;
-import plantmegapack.core.VanillaOreDict;
+import plantmegapack.core.PMPOreDictionary;
 import plantmegapack.object.PMPPowder;
 import plantmegapack.plant.PMPPlantCropDrops;
 import plantmegapack.worldgen.PMPWorldGenerator;
 import plantmegapack.worldgen.PMPWorldgenProfile;
 
 
-@Mod(modid="plantmegapack", name="Plant Mega Pack", version="1.10.2.2", canBeDeactivated=false, guiFactory="plantmegapack.gui.core.PMPGuiFactory", acceptedMinecraftVersions="[1.10.2]")
+@Mod(modid="plantmegapack", name="Plant Mega Pack", version="1.10.2.2", guiFactory="plantmegapack.gui.core.PMPGuiFactory", acceptedMinecraftVersions="[1.10.2]")
 public class PlantMegaPack {
 	@Mod.Instance("plantmegapack")
 	public static PlantMegaPack instance;
@@ -92,9 +92,9 @@ public class PlantMegaPack {
 			}
 		};
 		
-		VanillaOreDict.init();
 		configPathRoot = new String(event.getModConfigurationDirectory().getPath() + "//" + "plantmegapack" + "//");
 		proxy.preInit();
+		PMPOreDictionary.init();
 	}
 	
 	@Mod.EventHandler

@@ -898,12 +898,12 @@ spawnType.clvl=Very Large Cluster
 spawnType.clvs=Very Small Cluster
 spawnType.sing=Single Plant
 
-tab.aqua=PMP Aquatic Plants
-tab.crop=PMP Crop Plants
-tab.flow=PMP Flowers
-tab.item=PMP Items
-tab.land=PMP Land Plants
-tab.tree=PMP Trees
+itemGroup.tabAqua=PMP Aquatic Plants
+itemGroup.tabCrop=PMP Crop Plants
+itemGroup.tabFlow=PMP Flowers
+itemGroup.tabItem=PMP Items
+itemGroup.tabLand=PMP Land Plants
+itemGroup.tabTree=PMP Trees
 
 tile.leaves_acaciabaobob.name=Baobob Leaves
 tile.leaves_acaciacucumber.name=Cucumber Leaves
