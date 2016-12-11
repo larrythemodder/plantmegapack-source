@@ -2,17 +2,30 @@ package plantmegapack.core;
 
 import java.util.EnumSet;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraftforge.oredict.OreDictionary;
 import plantmegapack.PlantMegaPack;
 import plantmegapack.object.PMPFood;
-import plantmegapack.object.PMPFoodType;
-import plantmegapack.object.PMPFoodUse;
+import plantmegapack.plant.PMPPlant;
 
 public class PMPOreDictionary {
 	public static void init() {
 		OreDictionary.registerOre("cropApple", Items.APPLE);
 		OreDictionary.registerOre("cropCarrot", Items.CARROT);
+		
+		OreDictionary.registerOre("cropMushroom", Blocks.BROWN_MUSHROOM);
+		OreDictionary.registerOre("cropMushroom", Blocks.RED_MUSHROOM);
+		
+		OreDictionary.registerOre("foodCookedMeat", Items.COOKED_BEEF);
+		OreDictionary.registerOre("foodCookedMeat", Items.COOKED_CHICKEN);
+		OreDictionary.registerOre("foodCookedMeat", Items.COOKED_MUTTON);
+		OreDictionary.registerOre("foodCookedMeat", Items.COOKED_PORKCHOP);
+		OreDictionary.registerOre("foodCookedMeat", Items.COOKED_RABBIT);
+		OreDictionary.registerOre("foodCookedFish", Items.COOKED_FISH);
+		
+		OreDictionary.registerOre("foodBread", Items.BREAD);
+		OreDictionary.registerOre("foodBread", PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread));
 		
 		OreDictionary.registerOre("cropAcaiberry", PlantMegaPack.items.getFoodItem(PMPFood.foodAcaiberry));
 		OreDictionary.registerOre("cropBeautyberry", PlantMegaPack.items.getFoodItem(PMPFood.foodBeautyberry));
@@ -92,6 +105,40 @@ public class PMPOreDictionary {
 		OreDictionary.registerOre("cropWasabi", PlantMegaPack.items.getFoodItem(PMPFood.foodWasabiStem));
 		OreDictionary.registerOre("cropWaterchestnut", PlantMegaPack.items.getFoodItem(PMPFood.foodWaterChestnut));
 		OreDictionary.registerOre("cropWatercress", PlantMegaPack.items.getFoodItem(PMPFood.foodWatercress));
+		
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodAsparagus));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodBellPepperOrange));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodBellPepperRed));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodBellPepperYellow));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodBroccoli));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCassavaRoot));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCauliflower));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCelery));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCentellaLeaves));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodChicoryLeaves));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCorn));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodCucumber));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodEggplant));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodGarlic));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodGreenBeans));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodHops));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodHorseradish));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodHyacinthBeans));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodLaksaLeaves));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodLeek));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodLettuce));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodMozuku));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodOnion));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodRadish));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodSacredLotusRoot));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodSorrel));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodSpinach));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodTomato));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodTaroRoot));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodTurnip));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodWasabiStem));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodWaterChestnut));
+		OreDictionary.registerOre("cropVegetable", PlantMegaPack.items.getFoodItem(PMPFood.foodWatercress));
 		
 		OreDictionary.registerOre("cropLentil", PlantMegaPack.items.getFoodItem(PMPFood.foodLentil));
 		OreDictionary.registerOre("cropPeanuts", PlantMegaPack.items.getFoodItem(PMPFood.foodPeanuts));
@@ -198,5 +245,17 @@ public class PMPOreDictionary {
 		OreDictionary.registerOre("foodWrapSeaweedFish", PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedFish));
 		OreDictionary.registerOre("foodWrapSeaweedMeat", PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedMeat));
 		OreDictionary.registerOre("foodWrapSeaweedRice", PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedRice));
+		
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusBlackPowderpuff.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusChanterelle.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusDeathCap.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusGiantClub.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusParasol.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusStinkhorn.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusWeepingMilkCap.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusWoodBlewit.name()));
+		OreDictionary.registerOre("cropMushroom", PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.fungusWoollyGomphus.name()));
+		
+		
 	}
 }

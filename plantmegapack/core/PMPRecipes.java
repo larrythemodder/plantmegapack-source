@@ -110,18 +110,10 @@ public class PMPRecipes {
 		createBowlSoupRecipe("cropMozuku", PMPFood.foodMozukuSoup);
 		createBowlSoupRecipe("cropTomato", PMPFood.foodTomatoSoup);
 		
-		for (PMPPlant plant1 : PMPPlant.values()) {
-			if ((plant1.category == PMPPlantCategory.fung) && (!plant1.isPoisonPlant())) {
-				Item item1 = Item.getItemFromBlock(PlantMegaPack.blocks.getPlantBlockByName(plant1.name()));
-				createBowlStewRecipe(item1, Item.getItemFromBlock(Blocks.BROWN_MUSHROOM), Items.MUSHROOM_STEW);
-				createBowlStewRecipe(item1, Item.getItemFromBlock(Blocks.RED_MUSHROOM), Items.MUSHROOM_STEW);
-				for (PMPPlant plant2 : PMPPlant.values()) {
-					if ((plant2.category == PMPPlantCategory.fung) && (!plant2.isPoisonPlant())) {
-						createBowlStewRecipe(item1, Item.getItemFromBlock(PlantMegaPack.blocks.getPlantBlockByName(plant2.name())), Items.MUSHROOM_STEW);
-					}
-				}
-			}
-		}
+		ItemStack iOut = new ItemStack(Items.MUSHROOM_STEW);
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOut, new Object[]{
+			Items.BOWL, "cropMushroom", "cropMushroom"
+		}));
 	}
 	
 	private void createBowlCerealRecipe(String input, PMPFood output) {
@@ -151,7 +143,9 @@ public class PMPRecipes {
 	}
 	
 	private void createBowlStewRecipe(Item ingredient1, Item ingredient2, Item output) {
-		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[] { Items.BOWL, ingredient1, ingredient2 });
+		GameRegistry.addShapelessRecipe(new ItemStack(output), new Object[]{
+			Items.BOWL, ingredient1, ingredient2
+		});
 	}
 	
 	private void initCoralFragments() {
@@ -257,7 +251,7 @@ public class PMPRecipes {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output)), new Object[]{ "xy ", "z  ", 
 			'x', input, 
 			'y', Items.SUGAR, 
-			Character.valueOf('z'), Items.EGG
+			'z', Items.EGG
 		}));
 	}
 	
@@ -280,49 +274,40 @@ public class PMPRecipes {
 		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodCornFlour)), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCorn), 3));
 		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantGRN.name())), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3));
 		createEmptyFoodWrapRecipe(new ItemStack(PlantMegaPack.blocks.getPlantBlockByName(PMPPlant.saltwaterKelpGiantYEL.name())), new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed), 3));
-		for (PMPFood food1 : PMPFood.values()) {
-			if (food1.foodType == PMPFoodType.vege) {
-				for (PMPFood food2 : PMPFood.values()) {
-					if (food2.foodType == PMPFoodType.vege) {
-						createFoodWrapRecipes(food1, food2);
-					}
-				}
-			}
-		}
+		
+		Item foodWrapCorn = PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCorn);
+		ItemStack iOutCF = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCornFish));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutCF, new Object[]{
+			"foodCookedFish", "foodWrapCorn", "cropVegetable", "cropVegetable"
+		}));
+		ItemStack iOutCM = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCornMeat));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutCM, new Object[]{
+			"foodCookedMeat", "foodWrapCorn", "cropVegetable", "cropVegetable"
+		}));
+		ItemStack iOutCR = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapCornRice));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutCR, new Object[]{
+			"foodCookedRice", "foodWrapCorn", "cropVegetable", "cropVegetable"
+		}));
+		
+		Item foodWrapSeaweed = PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweed);
+		ItemStack iOutSF = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedFish));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutSF, new Object[]{
+			"foodCookedFish", "foodWrapSeaweed", "cropVegetable", "cropVegetable"
+		}));
+		ItemStack iOutSM = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedMeat));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutSM, new Object[]{
+			"foodCookedMeat", "foodWrapSeaweed", "cropVegetable", "cropVegetable"
+		}));
+		ItemStack iOutSR = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodWrapSeaweedRice));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutSR, new Object[]{
+			"foodCookedRice", "foodWrapSeaweed", "cropVegetable", "cropVegetable"
+		}));
 	}
 	
 	private void createEmptyFoodWrapRecipe(ItemStack input, ItemStack output) {
 		GameRegistry.addShapedRecipe(output, new Object[]{ "x x", " x ", 
 			'x', input
 		});
-	}
-	
-	private void createFoodWrapRecipes(PMPFood input1, PMPFood input2) {
-		createFoodWrapRecipe(input1, input2, Items.COOKED_FISH, PMPFood.foodWrapCorn, PMPFood.foodWrapCornFish);
-		
-		createFoodWrapRecipe(input1, input2, Items.COOKED_BEEF, PMPFood.foodWrapCorn, PMPFood.foodWrapCornMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_CHICKEN, PMPFood.foodWrapCorn, PMPFood.foodWrapCornMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_MUTTON, PMPFood.foodWrapCorn, PMPFood.foodWrapCornMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_PORKCHOP, PMPFood.foodWrapCorn, PMPFood.foodWrapCornMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_RABBIT, PMPFood.foodWrapCorn, PMPFood.foodWrapCornMeat);
-		
-		createFoodWrapRecipe(input1, input2, PlantMegaPack.items.getFoodItem(PMPFood.foodCookedRice), PMPFood.foodWrapCorn, PMPFood.foodWrapCornRice);
-		
-		createFoodWrapRecipe(input1, input2, Items.COOKED_FISH, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedFish);
-		
-		createFoodWrapRecipe(input1, input2, Items.COOKED_BEEF, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_CHICKEN, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_MUTTON, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_PORKCHOP, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedMeat);
-		createFoodWrapRecipe(input1, input2, Items.COOKED_RABBIT, PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedMeat);
-		
-		createFoodWrapRecipe(input1, input2, PlantMegaPack.items.getFoodItem(PMPFood.foodCookedRice), PMPFood.foodWrapSeaweed, PMPFood.foodWrapSeaweedRice);
-	}
-	
-	private void createFoodWrapRecipe(PMPFood input1, PMPFood input2, Item meat, PMPFood wrapInput, PMPFood wrapOutput) {
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(wrapOutput)), new Object[]{
-			PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), PlantMegaPack.items.getFoodItem(wrapInput), meat
-		}));
 	}
 	
 	private void initFruitBowls() {
@@ -421,7 +406,7 @@ public class PMPRecipes {
 	}
 	
 	private void createHangingPlantRecipe(Block input, Block output) {
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(output, 1, 0), new Object[] { "x", "y", "z", 
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(output), new Object[]{"x", "y", "z", 
 			'x', Items.IRON_INGOT, 
 			'y', input, 
 			'z', Items.BOWL
@@ -636,39 +621,19 @@ public class PMPRecipes {
 	}
 	
 	private void initSandwiches() {
-		for (PMPFood food1 : PMPFood.values()) {
-			if (food1.foodType == PMPFoodType.vege) {
-				for (PMPFood food2 : PMPFood.values()) {
-					if (food2.foodType == PMPFoodType.vege) {
-						createSandwichRecipes(food1, food2, Items.BREAD);
-						createSandwichRecipes(food1, food2, PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread));
-					}
-				}
-			}
-		}
-		createPBJSandwichRecipe(Items.BREAD);
-		createPBJSandwichRecipe(PlantMegaPack.items.getFoodItem(PMPFood.foodCornBread));
-	}
-	
-	private void createSandwichRecipes(PMPFood input1, PMPFood input2, Item bread) {
-		createSandwichRecipe(input1, input2, Items.COOKED_FISH, bread, PMPFood.foodSandwichFish);
-		createSandwichRecipe(input1, input2, Items.COOKED_BEEF, bread, PMPFood.foodSandwichMeat);
-		createSandwichRecipe(input1, input2, Items.COOKED_CHICKEN, bread, PMPFood.foodSandwichMeat);
-		createSandwichRecipe(input1, input2, Items.COOKED_MUTTON, bread, PMPFood.foodSandwichMeat);
-		createSandwichRecipe(input1, input2, Items.COOKED_PORKCHOP, bread, PMPFood.foodSandwichMeat);
-		createSandwichRecipe(input1, input2, Items.COOKED_RABBIT, bread, PMPFood.foodSandwichMeat);
-	}
-	
-	private void createSandwichRecipe(PMPFood input1, PMPFood input2, Item meat, Item bread, PMPFood output) {
-		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(output), 4), new Object[]{
-				PlantMegaPack.items.getFoodItem(input1), PlantMegaPack.items.getFoodItem(input2), meat, bread
-		});
-	}
-	
-	private void createPBJSandwichRecipe(Item bread) {
-		GameRegistry.addShapelessRecipe(new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichPBJ), 4), new Object[]{
-			PlantMegaPack.items.getFoodItem(PMPFood.foodPeanutButter), PlantMegaPack.items.getFoodItem(PMPFood.foodJelly), bread
-		});
+		ItemStack iOutF = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichFish), 4);
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutF, new Object[]{
+			"foodCookedFish", "foodBread", "cropVegetable", "cropVegetable"
+		}));
+		ItemStack iOutM = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichMeat), 4);
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutM, new Object[]{
+			"foodCookedMeat", "foodBread", "cropVegetable", "cropVegetable"
+		}));
+		
+		ItemStack iOutP = new ItemStack(PlantMegaPack.items.getFoodItem(PMPFood.foodSandwichPBJ), 4);
+		GameRegistry.addRecipe(new ShapelessOreRecipe(iOutP, new Object[]{
+			"foodBread", "foodPeanutButter", "foodJelly"
+		}));
 	}
 	
 	private void initSaplings() {
