@@ -10,4 +10,4 @@ Old downloads can be found at my website: http://larrysmods.weebly.com/plant-meg
 
 
 # New Releases
-Currently, the only compiled version available is 1.10.2-PORT1. The next release will be 1.10.2.2. There is no set release date, but it should be available once two major bugs get fixed (epiphytes and placing aquatic plants). This release won't look much different from the previous, but JEI will be a lot easier due to internal code changes.
+Currently, the only compiled version available is 1.10.2-PORT1. The next release will be 1.10.2.2. There is no set release date, but it should be available once two major bugs get fixed (epiphytes and placing aquatic plants). This release won't look much different from the previous, but JEI will be a lot easier to use due to internal code changes.
