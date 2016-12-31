@@ -105,7 +105,8 @@ public class PMPBlockEpiphyte
 	}
 	
 	public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
-		EnumFacing facing = (EnumFacing)worldIn.getBlockState(pos).getValue(FACING);
+		return Block.FULL_BLOCK_AABB;
+		/*EnumFacing facing = (EnumFacing)worldIn.getBlockState(pos).getValue(FACING);
 		AxisAlignedBB aabb = Block.FULL_BLOCK_AABB;
 		if (this.plantData.attributes.renderType == PMPPlantRender.epih) {
 			switch (facing) {
@@ -134,13 +135,14 @@ public class PMPBlockEpiphyte
 				break;
 			}
 		}
-		return aabb;
+		return aabb;*/
 	}
 	
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState state, World worldIn, BlockPos pos) {
-		if (this.plantData.attributes.renderType == PMPPlantRender.epih) {
+		return Block.FULL_BLOCK_AABB;
+		/*if (this.plantData.attributes.renderType == PMPPlantRender.epih) {
 			return state.getBoundingBox(worldIn, pos).offset(pos);
 		}
-		return super.getCollisionBoundingBox(state, worldIn, pos);
+		return super.getCollisionBoundingBox(state, worldIn, pos);*/
 	}
 }
